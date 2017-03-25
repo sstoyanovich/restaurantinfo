@@ -1,1 +1,1 @@
-COMPANIES PAGE CONTENT - TBD
+COMPANIES PAGE CONTENT - Will hold company profile pages
