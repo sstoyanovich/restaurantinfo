@@ -1,0 +1,108 @@
+/*****************************************************************************
+* PRODUCT DETAILS PAGE - Left Column 
+****************************************************************************/
+
+.details_left_column {
+	position: relative;
+	float: left;
+	width:175px !important; 
+	margin-bottom:10px !important;
+	border-collapse:collapse;
+	cursor: pointer; 
+	/* background-color:#900 !important; */
+	overflow:hidden;
+	font-size:12px !important;
+}
+@media (max-width: 993px) {
+    .details_left_column {
+		display:none;
+    }
+}
+@media (min-width: 994px) {
+    .details_left_column {
+		display:block;
+    }
+}
+
+/*****************************************************************************
+* PRODUCT DETAILS PAGE - Content Area 
+****************************************************************************/
+
+.details_photos_div {
+	position: relative;
+	float: left;
+	
+	width:587px !important; 
+	
+	margin-bottom:10px !important;
+/*	margin-left:10px !important; */
+	margin-right:10px !important; 
+	
+	border-collapse:collapse;
+	cursor: pointer;
+	overflow:hidden;
+	/* background-color:#03F !important; */
+}
+
+
+@media (max-width: 400px) {
+    .details_photos_div {
+		width:100% !important; 
+    }
+}
+@media (max-width: 500px) {
+    .details_photos_div {
+		width:100% !important; 
+    }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+    .details_photos_div {
+		width:100% !important; 
+    }
+}
+@media (min-width: 768px) and (max-width: 993px) {
+    .details_photos_div {
+		width:430px !important; 
+    }
+}
+@media (min-width: 994px) and (max-width: 1199px) {
+    .details_photos_div {
+		width:470px !important; 
+		margin-left:10px !important;
+    }
+}
+@media (min-width: 1200px) {
+    .details_photos_div {
+		width:670px !important; 
+		margin-left:10px !important;
+    }
+}
+
+/*****************************************************************************
+* Product Details Page Right Column 
+****************************************************************************/
+
+.details_info_div {
+	position: relative;
+	float: left;
+	width:290px !important; 
+	margin-bottom:10px !important;
+	border-collapse:collapse;
+	cursor: pointer; 
+	font-size:12px !important;
+	/* background-color:#F3C;  */
+}
+@media (max-width: 767px) {
+    .details_info_div {
+		width:100% !important; 
+    }
+}
+
+
+.store_rcol_banner_text {
+	font-size:16px !important;
+	line-height:14px;
+	font-size:15px;
+	color:#32586d;
+	margin-top:7px;
+}

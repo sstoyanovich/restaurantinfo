@@ -1,0 +1,519 @@
+/*****************************************************************************
+* Logo and Banner 
+****************************************************************************/
+
+.small_logo {
+	  float: left;
+
+	margin-top:3px !important;
+	border:none !important;
+	padding:0xp !important
+
+}
+@media (max-width: 767px) {
+    .small_logo {
+		display:block;
+    }
+}
+
+@media (min-width: 768px) {
+    .small_logo {
+		display:none;
+    }
+}
+
+.small_logo_img {
+	margin:0px !important;
+	border:1px !important; 
+	padding:0px !important
+}
+
+/*****************************************************************************
+* Search form in banner 
+****************************************************************************/
+
+.banner_search_form {
+	float: left;
+	margin-top:3px !important;
+	border:none !important;
+	padding:0xp !important
+
+}
+
+.banner_search_form {
+	display:none;
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+    .banner_search_form {
+		display:block;
+    }
+}
+
+
+
+/*****************************************************************************
+* Navigation Bar 
+****************************************************************************/
+
+.navbar-wrapper
+{
+	background-color:#FFF !important;
+	margin:0 !important;
+	border:none !important;
+	padding:0 !important;
+}
+
+.header_logo
+{
+	width:280px !important;
+	text-align:center;
+}
+
+.navbar 
+{
+	background-color:#274352 !important;
+	/* background-image:url(/images/layout/main-navigation-responsive-bkgnd.jpg);  */
+	background-repeat:repeat-x;
+	margin:0 !important;
+	border:none !important;
+	padding:0 !important;
+	width:100% !important;
+}
+.navbar-collapse a
+{
+	color:#FFF !important;
+}
+
+.dropdown-menu a
+{
+	color:#333 !important;
+	background-color:#eee !important;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+
+.main_nav_link
+{
+	color:#fff;
+	font-size:12px;
+}
+
+.main_nav_link:hover
+{
+	color:#ffff00;
+}
+
+/*****************************************************************************
+* Left Column 
+****************************************************************************/
+
+.left_column {
+	position: relative;
+	float: left;
+	width:175px !important; 
+	margin-bottom:10px !important;
+	border-collapse:collapse;
+	cursor: pointer; 
+	/* background-color:#900 !important; */
+	overflow:hidden;
+	font-size:12px !important;
+}
+@media (max-width: 767px) {
+    .left_column {
+		display:none;
+    }
+}
+@media (min-width: 768px) {
+    .left_column {
+		display:block;
+    }
+}
+
+/*****************************************************************************
+* Two Column layout 
+****************************************************************************/
+
+.column1 {
+	display:block;
+	position: relative;
+	float: left;
+	width:39% !important; 
+	margin-bottom:10px !important;
+	border-collapse:collapse;
+	cursor: pointer; 
+	/* background-color:#900 !important; */
+	overflow:hidden;
+	font-size:12px !important;
+}
+
+.two_column_divider {
+	display:block;
+	position: relative;
+	float: left;
+	width:1% !important;
+	 
+}
+
+.column2 {
+	display:block;
+	position: relative;
+	float: right;
+	width:59% !important; 
+	margin-bottom:10px !important;
+	border-collapse:collapse;
+	cursor: pointer; 
+	/* background-color:#900 !important; */
+	overflow:hidden;
+	font-size:12px !important;
+}
+
+
+
+
+/*****************************************************************************
+* General Customization (used by different elements)
+****************************************************************************/
+
+.small_only {
+	display:none;
+	padding:0 !important;
+	margin:0 !important;
+	border:none !important;
+}
+@media (max-width: 767px) {
+    .small_only {
+		display:block;
+    }
+}
+
+.wide_only {
+	display:none;
+	padding:0 !important;
+	margin:0 !important;
+	border:none !important;
+}
+@media (min-width: 768px) {
+    .wide_only {
+		display:block;
+    }
+}
+
+@media (max-width: 767px) {
+    .marketing {
+		margin-top:60px !important;
+    }
+}
+@media (min-width: 768px) {
+    .marketing {
+	margin-top:60px !important;
+    }
+}
+
+
+.text_link
+{
+	color:#0000cc;
+	text-decoration:underline;
+}
+
+.text_link:hover
+{
+	color:#900;
+}
+
+
+/*****************************************************************************
+* Edit Forms
+****************************************************************************/
+
+@media (max-width: 500px) {
+    .text_area_box {
+	width:100% !important;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 767px) {
+    .text_area_box {
+	width:100% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .text_area_box {
+	width:100% !important;
+    }
+}
+
+@media (min-width: 993px) {
+    .text_area_box {
+	width:100% !important;
+    }
+}
+
+
+
+
+/*****************************************************************************
+* Footer
+****************************************************************************/
+
+footer
+{
+	margin:0 !important; 
+	padding:0 !important; 
+	border:none !important
+}
+
+.footer_navlink
+{
+	color:#fff;
+	font-size:12px;
+}
+
+.footer_navlink:hover
+{
+	color:#ffff00;
+}
+
+
+
+/*
+
+.product_cell {
+	 width:100% !important; 
+	 height:265px !important; 
+	 margin-bottom:10px !important;
+	 border-collapse:collapse;
+	 border-color:#333; 
+	 border-collapse:collapse; 
+	 box-shadow: 5px 5px 5px #888888; 
+	 cursor: pointer; 
+	 cursor: hand;
+}
+
+
+
+@media (max-width: 499px) {
+	
+	.product_column {
+		width:100% !important;
+	}
+	.product_cell_photo
+	{
+		background-size: 100% !important;
+		height:200px !important;
+	}
+}
+	
+@media (min-width: 500px) and (max-width: 767px) {
+	
+	.product_column {
+		width:50% !important;
+	}
+	.product_cell_photo
+	{
+		background-size: 378px 250px !important;
+		height:200px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	
+	.product_column {
+		width:50% !important;
+	}
+	.product_cell_photo
+	{
+		background-size: 378px 250px !important;
+		height:250px !important;
+	}
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+
+	.product_column {
+	    width: 33.33333333%;
+	}
+	.product_cell_photo
+	{
+		background-size: 325px 215px !important;
+		height:215px !important;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.product_column {
+	    width: 33.33333333%;
+	}
+	.product_cell_photo
+	{
+		background-size: 378px 250px !important;
+		height:250px !important;
+	}
+}
+
+#product_two_col_first
+{
+	float:left;
+	font-size:16px;
+}
+#product_two_col_second
+{
+	float:left;
+}
+
+#product_sub_nav
+{
+	margin-bottom:12px;	
+	font-size:12px !important;
+	z-index:100 !important;
+}
+#product_sub_nav a
+{
+	text-decoration:underline !important;
+	color:#000 !important;
+	font-weight:bold;
+}
+
+
+.property_box {
+	font-size:14px !important;
+	line-height:20px;
+	height:275px !important;
+}
+
+@media (max-width: 499px) {
+	
+	.property_column {
+		width:100% !important;
+	}
+	.property_cell_photo
+	{
+		background-size: 100% !important;
+		height:200px !important;
+	}
+}
+	
+@media (min-width: 500px) and (max-width: 767px) {
+	
+	.property_column {
+		width:50% !important;
+	}
+	.property_cell_photo
+	{
+		background-size: 378px 250px !important;
+		height:200px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	
+	.property_column {
+		width:50% !important;
+	}
+	.property_cell_photo
+	{
+		background-size: 378px 250px !important;
+		height:250px !important;
+	}
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+
+	.property_column {
+	    width: 33.33333333%;
+	}
+	.property_cell_photo
+	{
+		background-size: 325px 215px !important;
+		height:215px !important;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.property_column {
+	    width: 33.33333333%;
+	}
+	.property_cell_photo
+	{
+		background-size: 378px 250px !important;
+		height:250px !important;
+	}
+}
+
+#property_two_col_first
+{
+	float:left;
+	font-size:16px;
+}
+#property_two_col_second
+{
+	float:left;
+}
+
+#property_sub_nav
+{
+	margin-bottom:12px;	
+	font-size:12px !important;
+	z-index:100 !important;
+}
+#property_sub_nav a
+{
+	text-decoration:underline !important;
+	color:#000 !important;
+	font-weight:bold;
+}
+
+------------------------------------------------------------------
+
+
+	text-transform: uppercase; 
+	font-weight: 400; 
+	margin-left:170px !important; 
+
+	font-size: 1.25em;
+	height:40px !important;
+	margin: 0 auto;
+	padding:0 !important; 
+	font-size: 1.25em;
+	letter-spacing:normal !important;
+
+	display: table;
+	table-layout: fixed;
+	float: none;
+	
+	margin-top:72px !important; 
+	margin-right:0 !important;
+
+		background-image:url(/images/layout/main-navigation-bkgnd.png); 
+		background-repeat:repeat-x;
+
+  style="background-image:url(/images/layout/main-navigation-bkgnd.png)
+.logo-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+.logo-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.logo-wrapper .logo {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.logo-wrapper .logo .container {
+  width: auto;
+}
+
+*/ 

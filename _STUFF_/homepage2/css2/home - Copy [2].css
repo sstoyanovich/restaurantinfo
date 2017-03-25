@@ -1,0 +1,456 @@
+
+/*******************************************************************************************************
+* Global 
+*******************************************************************************************************/
+
+.body { 
+	margin:0; 
+	padding:0; 
+	font-family:"DIN Next W01 Light","Arial Narrow",sans-serif; 
+	background-color:#414142 !important; 
+	}
+
+body.home {
+	overflow: hidden;
+	background-color:#414142 !important;
+	font-family: "DIN Next W01 Light", "Arial Narrow", sans-serif;
+}
+
+h1 {
+	font-size:14px !important;
+	font-weight:bold !important;
+	color:#fffff !important;
+	margin:0 !important;
+	padding:0 !important;
+}
+
+/*******************************************************************************************************
+* home page 
+*******************************************************************************************************/
+
+#home #header-logo {
+  position: absolute;
+	top: 30%;
+  left: 0;
+  right: 0;
+    margin:0 auto;
+	display: block;
+	width: 650px;
+	height:250px !important;
+	z-index: 25;
+   /* background: linear-gradient(#900, #ccc); */
+
+    background: linear-gradient(to top, rgba(0,192,65,.7), rgba(0,40,216,.7)); 
+}
+
+#home #main {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  text-align: center;
+	margin: 0;
+  overflow: visible;
+  left: 0;
+	background-color:#414142 !important; 
+}
+
+#home #main ul {
+  margin: 0 auto;
+  height: auto !important;
+  width: 100%;
+}
+
+#home #main li {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#home #main ul li img {
+  position: relative;
+	margin-top: -40%;
+	text-align: center;
+	vertical-align: text-bottom;
+	opacity: 1;
+	overflow: visible;
+	height: auto;
+  width: 100%;
+}
+
+#controls {
+  position: absolute;
+	top: 20px;
+	left: 20px;
+	display: block;
+	width: 150px;
+	z-index: 25;
+}
+
+
+
+
+/*******************************************************************************************************
+* Properties Listing page 
+*******************************************************************************************************/
+
+#properties
+{
+	position: absolute; 
+	top:0;
+	left:0;
+	width: 100%; 
+	/* height:100% !important; */
+	z-index:8; 
+	border:thin;
+	border-color:#FF0000;
+	background-color:#ffffff !important url(/images2/featured-properties-bar-bkgnd.gif) repeat-x; 
+	/* background-color:#414142 !important;  */
+}
+
+#seo-property-bullets {
+  position: absolute;
+	top: 42px;
+	left: 185px;
+	display: block;
+	width: 275px !important;
+	height:152px !important;
+	z-index: 25;
+	color:#fff !important;
+	font-size:14px !important;
+	/* background: url(/images2/text-box.png) repeat-y;  */
+}
+
+#seo-property-bullets a {
+	color:#fff !important;
+}
+
+#seo-property-bullets ul {
+	margin-left:20px !important;
+	padding:0 !important;
+	border:0 !important;
+}
+
+
+#properties-top-bar
+{
+	position: absolute; 
+	top:0;
+	left:0;
+	height:34px;
+	width: 100%; 
+	z-index:20; 
+	/* background:url(/images2/top-corner-bkgnd.gif) no-repeat; */
+}
+
+#properties-left-col 
+{
+	position: absolute; 
+	
+	left: 0px;
+	bottom: 0px; 
+	top:34px;
+	
+	width: 215px;
+	height:100% !important;
+	background-color:#ffffff;
+	
+	/* background:#ffffff url(/images2/properties-left-col-bkgnd.jpg) no-repeat; */
+	
+	z-index:10;
+}
+
+#properties-list-wrap
+{
+	position: absolute; 
+	top:34px;
+	left: 0;
+	width: 100%; 
+	z-index:9;
+}
+
+#properties-list
+{
+	margin-left:215px;
+}
+
+.property-table
+{
+	font-size:33px;	
+}
+
+.year_link
+{
+	color:#111111;
+	text-decoration:underline;	
+}
+
+
+/*******************************************************************************************************
+* Properties Detail page 
+*******************************************************************************************************/
+
+#show-property 
+{
+      position: absolute; 
+	  top:3px;
+	  left:0;
+	  right:0;
+	  width: 100%; 
+	  height:100%;
+	  z-index:12;
+}
+
+#show-property-top-bar
+{
+	position: absolute; 
+	height:34px;
+	left:0;
+	top:0;
+	z-index:15;
+	width:100%
+}
+
+
+#show-property-left-col 
+{
+	position: absolute; 
+	
+	left: 0px; 
+	bottom: 0px; 
+	/* top:175px; */
+	
+	width: 215px; 
+	height:100%;
+	/* background:#636466; */
+	
+	text-align:center;
+	
+	z-index:15;
+}
+
+
+#property-photos 
+{
+      position: absolute; 
+	  top:34px;
+	  left:0;
+	  right:0;
+	  width: 100%; 
+	  height:100%;
+	  z-index:12;
+}
+
+/*
+#slidewhow #img
+{
+	  width: 100px; 
+	  height:100px;
+}
+*/
+
+#show-property-left-col2 
+{
+	position: absolute; 
+	
+	left: 0px; 
+	bottom: 0px; 
+	top:0;
+	
+	width: 215px; 
+	height:100%;
+	/* background:#636466; */
+	
+	text-align:center;
+	
+	z-index:15;
+}
+
+/*******************************************************************************************************
+* Market Data Page
+*******************************************************************************************************/
+
+#market-data 
+{
+	position: absolute; 
+	color:#ffffff;
+	width: 100%; 
+	height:100%;
+}
+
+#market-data-left-col 
+{
+	position: absolute; 
+	
+	left: 0px; 
+	right: 280px;    /* do I need this ???? */
+	bottom: 0px; 
+	top:0;
+	
+	width: 280px; 
+	height:100%;
+	background:#404041 url(/images2/market-data-left-col-bkgnd2.png) no-repeat;
+	
+	z-index:9;
+}
+
+
+
+
+
+/*******************************************************************************************************
+* About Pages 
+*******************************************************************************************************/
+
+#about 
+{
+	position: absolute; 
+	color:#ffffff;
+	width: 100%; 
+	height:100%;
+}
+
+
+
+#about-list 
+{
+	background: url(/images2/circle-g.jpg) no-repeat;
+}
+
+#about-left-col 
+{
+	position: absolute; 
+	
+	left: 0px; 
+	right: 280px;    /* do I need this ???? */
+	bottom: 0px; 
+	top:0;
+	
+	width: 280px; 
+	height:100%;
+	background:#404041 url(/images2/about-left-col-bkgnd.jpg) no-repeat;
+	
+	z-index:9;
+}
+
+
+#pacific-list 
+{
+	
+}
+
+
+/*******************************************************************************************************
+* testimonials Pages
+*******************************************************************************************************/
+
+#testimonials 
+{
+	position: absolute; 
+	top:0;
+	padding:0;
+	margin:0;
+	color:#ffffff;
+	width: 100%; 
+	height:100%;
+}
+
+
+
+#testimonials-list 
+{
+	position: absolute; 
+	top:0;
+	z-index:9;
+}
+
+#testimonials-left-col 
+{
+	position: absolute; 
+	
+	left: 0px; 
+	/* bottom: 0px;  */
+	
+	width: 280px; 
+	height:100% !important;
+	background:#404041 url(/images2/about-left-col-bkgnd.jpg) no-repeat;
+	
+	z-index:10;
+}
+
+
+/*******************************************************************************************************
+* contact Pages
+*******************************************************************************************************/
+
+#contact 
+{
+	position: relative; 
+	width: 100%; 
+	height: 2000px;
+	z-index:8; 
+	top:-34px;
+	background:#404042 url(/images2/contact-bkgnd2.jpg) no-repeat;
+}
+
+
+#contact-info
+{
+	position: absolute; 
+	font-weight:normal;
+	cololr:#fff;
+	font-size:13px;
+	
+	left: 0px; 
+	bottom: 0px; 
+	top:50px;
+	
+	width: 75%; 
+	
+	z-index:9;
+}
+
+
+/*******************************************************************************************************
+* Footer 
+*******************************************************************************************************/
+
+#home #footer-wrap {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 75px;
+	left: 0;
+	margin: 76px auto 0px;
+	padding: 0;
+	z-index: 99;
+	background: #414142;
+}
+
+#home #footer {
+	border-left:none !important;
+	border-right:none !important;
+	border-bottom:none !important;
+    border-top: 1px !important;
+	height: 75px;
+	padding: 0;
+	line-height: 18px;
+	font-size: 12px;
+	color: #ccc;
+	font-family: "DIN Next W01 Condensed Light", "Arial Narrow", sans-serif;
+	
+	border-width:100%;
+	border-style:solid;
+	border-color:#ffffff;
+}
+
+#home #footer a {
+	color: #ccc;
+}
+
+#home #footer p#style-finder img {
+  padding: 0;
+  line-height: 25px !important;
+  vertical-align: middle;
+  margin: 0;
+}

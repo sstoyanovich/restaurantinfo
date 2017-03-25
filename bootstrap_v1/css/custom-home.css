@@ -1,0 +1,139 @@
+/*****************************************************************************
+* HOME PAGE - Content Area 
+****************************************************************************/
+
+.product_column {
+	position: relative;
+	float: left;
+	min-height: 1px;
+	padding-left: 1px;
+	padding-right: 3px;
+}
+
+.product_box {
+	width:180px !important;
+	height:220px !important;
+	margin-left:1px;
+	margin-right:1px;
+	margin-bottom:7px;
+	
+	font-size:12px !important;
+	color:#000;
+	line-height:14px;
+	
+	bordercolor:#eeeeee;
+	border-collapse:collapse;
+	box-shadow: 3px 3px 3px #888888;	
+}
+.product_box_div {
+	width:180px;
+}
+
+.content_column {
+	position: relative;
+	float: left;
+	width:587px !important; 
+	margin-bottom:10px !important;
+	border-collapse:collapse;
+	cursor: pointer;
+	overflow:hidden;
+	/* background-color:#03F !important; */
+}
+
+@media (max-width: 400px) {
+    .content_column {
+		/* background-color:#03F !important; */
+    }
+}
+
+@media (max-width: 500px) {
+    .content_column {
+		width:100% !important; 
+    }
+	.product_column {
+		width:100% !important;
+	}
+	.product_box {
+		width:100% !important;
+	}
+	.product_box_div {
+		width:100% !important;
+	}
+}
+@media (min-width: 501px) and (max-width: 7687px) {
+    .content_column {
+		width:100% !important; 
+    }
+	.product_column {
+		width:50% !important;
+	}
+	.product_box {
+		width:100% !important;
+	}
+	.product_box_div {
+		width:100% !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 993px) {
+    .content_column {
+		width:570px !important; 
+		/* background-color:#ffffcc !important; */
+    }
+	.product_column {
+		width:33% !important;
+	}
+	.product_box_div {
+		width:180px !important;
+	}
+}
+@media (min-width: 994px) and (max-width: 1199px) {
+    .content_column {
+		width:570px !important; 
+    }
+	.product_column {
+		width:190px !important;
+	}
+	.product_box_div {
+		width:180px !important;
+	}
+}
+@media (min-width: 1200px) {
+    .content_column {
+		width:790px !important; 
+    }
+	.product_column {
+		width:260px !important;
+	}
+	.product_box {
+		width:250px !important;
+	}
+	.product_box_div {
+		width:250px !important;
+	}
+}
+
+
+/*****************************************************************************
+* Home Page Right Column 
+****************************************************************************/
+
+.right_column {
+	position: relative;
+	float: right;
+	width:192px !important; 
+	margin-bottom:10px !important;
+	border-collapse:collapse;
+	cursor: pointer; 
+	font-size:12px !important;
+	/* background-color:#3C9 !important; */
+}
+@media (max-width: 993px) {
+    .right_column {
+		display:none;
+    }
+}
+@media (min-width: 994px) {
+    .right_column {
+		display:block;
+    }
+}

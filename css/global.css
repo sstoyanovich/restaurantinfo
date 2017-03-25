@@ -1,0 +1,101 @@
+
+
+body {
+	font-family: verdana,geneva,arial,helvetica,sans-serif;
+	font-size: 10pt;
+	
+}
+
+A{color:#003366}
+A:HOVER{color:#003399}
+
+.topnavlink {color:#ffffff;font-size:11px;font-weight:bold;text-decoration:none;}
+.topnavlink:hover {color:#ffffff;text-decoration:underline;}
+
+tr, td, table {
+	font-family: verdana,geneva,arial,helvetica,sans-serif;
+	font-size: 11px;
+	color:#333333;
+	page-break-inside: avoid;
+	border-collapse:collapse;
+
+}
+ 
+table.border {
+	font-family: verdana,geneva,arial,helvetica,sans-serif;
+	color: black;
+	page-break-inside: avoid;
+	border-color:Black;
+	border-width:1px;
+	border-style:solid;
+	border-collapse:collapse;
+}
+
+.tableheader {
+	background-color: #99cc33;
+}
+
+.store_rcol_banner_box {
+	height:50px !important;
+	width:100% !important;
+	border-collapse:collapse;
+	font-size:12px;
+	background-color:#fff;
+	box-shadow: 3px 3px 3px #888888;
+	padding:12px;	
+	margin-bottom:12px;
+	margin-left:1px;
+}
+
+.store_rcol_banner_text {
+	font-size:16px !important;
+	line-height:14px;
+	font-size:15px;
+	color:#555;
+	margin-top:7px;
+}
+
+.portal_header_text {
+	color: #fff;
+	font-size:14px;
+}
+
+.normal {
+	font-family: verdana,geneva,arial,helvetica,sans-serif;
+	font-size: 10pt;
+}
+
+.smallprint {
+	font-family: verdana,geneva,arial,helvetica,sans-serif;
+	font-size: 10px;
+}
+.footer {
+	font-family: verdana,geneva,arial,helvetica,sans-serif;
+	font-size: 10px;
+}
+.subhead {
+	font-family: verdana,geneva,arial,helvetica,sans-serif;
+	font-size: 12pt;
+	color: #99CC00;
+	font-weight: bold;
+}
+.head {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 14pt;
+	color: #000000;
+	line-height: 100%;
+}
+
+hr {
+	color: #000000; 
+	noshade;
+}
+img.imageborder {border-width:0;}
+.tableheaderbg {background-color: #99cc00;color: #ffffff;}
+.checkoutbg {background-color: #ffffff;}
+.tablebg {background-color: #F5F5F5;color: #000000;}
+.tablebg2 {background-color: #E9E9E9;color: #000000;}
+.sidebartext {color: #000000;}
+.sidebarbg {background-color: #ffffff;}
+.alertmessage {color: #FF0000;}
+

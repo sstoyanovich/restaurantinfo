@@ -1,0 +1,2 @@
+[02-Aug-2016 17:43:12 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eysdev/public_html/members/change_seeker_fav_status.php:22) in /home/eysdev/public_html/members/change_seeker_fav_status.php on line 53
+[02-Aug-2016 17:43:35 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eysdev/public_html/members/change_seeker_fav_status.php:22) in /home/eysdev/public_html/members/change_seeker_fav_status.php on line 53

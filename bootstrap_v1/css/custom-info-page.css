@@ -1,0 +1,81 @@
+/*****************************************************************************
+* INFO PAGE - Left Column 
+****************************************************************************/
+
+.details_left_column {
+	position: relative;
+	float: left;
+	width:175px !important; 
+	margin-bottom:10px !important;
+	border-collapse:collapse;
+	cursor: pointer; 
+	/* background-color:#900 !important; */
+	overflow:hidden;
+	font-size:12px !important;
+}
+@media (max-width: 993px) {
+    .details_left_column {
+		display:none;
+    }
+}
+@media (min-width: 994px) {
+    .details_left_column {
+		display:block;
+    }
+}
+
+/*****************************************************************************
+* INFO PAGE PAGE - Content Area 
+****************************************************************************/
+
+.info_page_content {
+	position: relative;
+	float: left;
+	
+	width:740px; 
+	
+	margin-bottom:10px !important;
+	margin-left:10px !important; 
+	margin-right:10px !important; 
+	
+	border-collapse:collapse;
+	cursor: pointer;
+	overflow:hidden;
+	/* background-color:#03F !important; */
+}
+
+
+@media (max-width: 400px) {
+    .info_page_content {
+		width:100% !important; 
+    }
+}
+@media (max-width: 500px) {
+    .info_page_content {
+		width:100% !important; 
+    }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+    .info_page_content {
+		width:100% !important; 
+    }
+}
+@media (min-width: 768px) and (max-width: 993px) {
+    .info_page_content {
+		width:530px !important; 
+		margin-left:20px !important; 
+    }
+}
+@media (min-width: 994px) and (max-width: 1199px) {
+    .info_page_content {
+		width:750px !important; 
+		margin-left:20px !important; 
+    }
+}
+@media (min-width: 1200px) {
+    .info_page_content {
+		width:740px !important; 
+		margin-left:20px !important; 
+    }
+}
+

@@ -1,0 +1,4 @@
+[03-Aug-2016 12:42:09 America/Chicago] PHP Warning:  require(members/profile-job-list-inc.php): failed to open stream: No such file or directory in /home/eysdev/public_html/profile.php on line 38
+[03-Aug-2016 12:42:09 America/Chicago] PHP Warning:  require(members/profile-job-list-inc.php): failed to open stream: No such file or directory in /home/eysdev/public_html/profile.php on line 38
+[03-Aug-2016 12:42:09 America/Chicago] PHP Fatal error:  require(): Failed opening required 'members/profile-job-list-inc.php' (include_path='.:/opt/php54/lib/php') in /home/eysdev/public_html/profile.php on line 38
+[03-Aug-2016 12:47:23 America/Chicago] PHP Warning:  mysql_fetch_object(): 16 is not a valid MySQL result resource in /home/eysdev/public_html/members/profile-job-list-inc.php on line 28

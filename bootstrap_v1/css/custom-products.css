@@ -1,0 +1,101 @@
+/*****************************************************************************
+* PRODUCT DETAILS PAGE - Left Column 
+****************************************************************************/
+
+.details_left_column {
+	position: relative;
+	float: left;
+	width:175px !important; 
+	margin-bottom:10px !important;
+	border-collapse:collapse;
+	cursor: pointer; 
+	/* background-color:#900 !important; */
+	overflow:hidden;
+	font-size:12px !important;
+}
+@media (max-width: 993px) {
+    .details_left_column {
+		display:none;
+    }
+}
+@media (min-width: 994px) {
+    .details_left_column {
+		display:block;
+    }
+}
+
+/*****************************************************************************
+* PRODUCT DETAILS PAGE - Content Area 
+****************************************************************************/
+
+.products_div {
+	position: relative;
+	float: left;
+	
+	width:587px !important; 
+	
+	margin-bottom:10px !important;
+/*	margin-left:10px !important; */
+	margin-right:10px !important; 
+	
+	border-collapse:collapse;
+	cursor: pointer;
+	overflow:hidden;
+	/* background-color:#03F !important; */
+}
+
+
+@media (max-width: 400px) {
+    .products_div {
+		width:100% !important; 
+    }
+}
+@media (max-width: 500px) {
+    .products_div {
+		width:100% !important; 
+    }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+    .products_div {
+		width:100% !important; 
+    }
+}
+@media (min-width: 768px) and (max-width: 993px) {
+    .products_div {
+		width:430px !important; 
+    }
+}
+@media (min-width: 994px) and (max-width: 1199px) {
+    .products_div {
+		width:470px !important; 
+		margin-left:10px !important;
+    }
+}
+@media (min-width: 1200px) {
+    .products_div {
+		width:670px !important; 
+		margin-left:10px !important;
+    }
+}
+
+/*****************************************************************************
+* Product Details Page Right Column 
+****************************************************************************/
+
+.artist_profile_div {
+	position: relative;
+	float: right;
+	width:200px !important; 
+	margin-bottom:10px !important;
+	border-collapse:collapse;
+	cursor: pointer; 
+	font-size:12px !important;
+	display:none;
+	/* background-color:#F3C; */
+}
+@media (min-width: 767px) {
+    .artist_profile_div {
+		display:block;
+    }
+}
+

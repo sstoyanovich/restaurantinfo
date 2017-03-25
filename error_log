@@ -1,0 +1,33 @@
+[27-Jul-2016 17:37:59 America/Chicago] PHP Warning:  Unterminated comment starting line 22 in /home/eysdev/public_html/delete-member.php on line 22
+[27-Jul-2016 17:37:59 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/eysdev/public_html/delete-member.php:22) in /home/eysdev/public_html/delete-member.php on line 2
+[28-Jul-2016 15:07:32 America/Chicago] PHP Warning:  require(list-members-filter-2.php): failed to open stream: No such file or directory in /home/eysdev/public_html/admin/list-members-filter-inc.php on line 8
+[28-Jul-2016 15:07:32 America/Chicago] PHP Warning:  require(list-members-filter-2.php): failed to open stream: No such file or directory in /home/eysdev/public_html/admin/list-members-filter-inc.php on line 8
+[28-Jul-2016 15:07:32 America/Chicago] PHP Fatal error:  require(): Failed opening required 'list-members-filter-2.php' (include_path='.:/opt/php54/lib/php') in /home/eysdev/public_html/admin/list-members-filter-inc.php on line 8
+[28-Jul-2016 16:42:22 America/Chicago] PHP Warning:  require(members/edit-banner-ad-inc.php): failed to open stream: No such file or directory in /home/eysdev/public_html/edit-banner-ad.php on line 21
+[28-Jul-2016 16:42:22 America/Chicago] PHP Warning:  require(members/edit-banner-ad-inc.php): failed to open stream: No such file or directory in /home/eysdev/public_html/edit-banner-ad.php on line 21
+[28-Jul-2016 16:42:22 America/Chicago] PHP Fatal error:  require(): Failed opening required 'members/edit-banner-ad-inc.php' (include_path='.:/opt/php54/lib/php') in /home/eysdev/public_html/edit-banner-ad.php on line 21
+[28-Jul-2016 16:48:00 America/Chicago] PHP Warning:  require(admin/edit-banner-ad-inc.php): failed to open stream: No such file or directory in /home/eysdev/public_html/edit-banner-ad.php on line 21
+[28-Jul-2016 16:48:00 America/Chicago] PHP Warning:  require(admin/edit-banner-ad-inc.php): failed to open stream: No such file or directory in /home/eysdev/public_html/edit-banner-ad.php on line 21
+[28-Jul-2016 16:48:00 America/Chicago] PHP Fatal error:  require(): Failed opening required 'admin/edit-banner-ad-inc.php' (include_path='.:/opt/php54/lib/php') in /home/eysdev/public_html/edit-banner-ad.php on line 21
+[01-Aug-2016 13:02:55 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eysdev/public_html/update-job-status.php:16) in /home/eysdev/public_html/update-job-status.php on line 37
+[05-Aug-2016 12:52:23 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 124
+[05-Aug-2016 13:05:28 America/Chicago] PHP Warning:  mysql_fetch_object(): 39 is not a valid MySQL result resource in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 82
+[05-Aug-2016 13:06:29 America/Chicago] PHP Warning:  mysql_fetch_object(): 39 is not a valid MySQL result resource in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 82
+[05-Aug-2016 13:07:37 America/Chicago] PHP Warning:  mysql_fetch_object(): 39 is not a valid MySQL result resource in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 82
+[05-Aug-2016 13:08:03 America/Chicago] PHP Warning:  mysql_fetch_object(): 39 is not a valid MySQL result resource in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 82
+[05-Aug-2016 13:08:19 America/Chicago] PHP Warning:  mysql_fetch_object(): 39 is not a valid MySQL result resource in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 82
+[05-Aug-2016 13:10:40 America/Chicago] PHP Warning:  mysql_fetch_object(): 39 is not a valid MySQL result resource in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 82
+[05-Aug-2016 13:11:13 America/Chicago] PHP Warning:  mysql_fetch_object(): 39 is not a valid MySQL result resource in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 82
+[05-Aug-2016 13:11:25 America/Chicago] PHP Warning:  mysql_fetch_object(): 39 is not a valid MySQL result resource in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 82
+[05-Aug-2016 13:11:39 America/Chicago] PHP Warning:  mysql_fetch_object(): 39 is not a valid MySQL result resource in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 82
+[05-Aug-2016 13:12:01 America/Chicago] PHP Warning:  mysql_fetch_object(): 39 is not a valid MySQL result resource in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 82
+[05-Aug-2016 13:12:17 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 124
+[05-Aug-2016 13:12:28 America/Chicago] PHP Warning:  mysql_fetch_object(): 39 is not a valid MySQL result resource in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 82
+[05-Aug-2016 13:12:36 America/Chicago] PHP Warning:  mysql_fetch_object(): 39 is not a valid MySQL result resource in /home/eysdev/public_html/members/my-jobs-employer-inc.php on line 82
+[08-Aug-2016 12:30:48 America/Chicago] PHP Warning:  require(members/my-jobs-employer-applicants-inc.php): failed to open stream: No such file or directory in /home/eysdev/public_html/my-jobs.php on line 27
+[08-Aug-2016 12:30:48 America/Chicago] PHP Warning:  require(members/my-jobs-employer-applicants-inc.php): failed to open stream: No such file or directory in /home/eysdev/public_html/my-jobs.php on line 27
+[08-Aug-2016 12:30:48 America/Chicago] PHP Fatal error:  require(): Failed opening required 'members/my-jobs-employer-applicants-inc.php' (include_path='.:/opt/php54/lib/php') in /home/eysdev/public_html/my-jobs.php on line 27
+[09-Aug-2016 15:54:51 America/Chicago] PHP Fatal error:  Call to undefined function notification_type() in /home/eysdev/public_html/members/my-jobs-employer-applicants-inc.php on line 102
+[16-Aug-2016 18:14:20 America/Chicago] PHP Warning:  require(../glassdoor/get-hired-search-box-inc.php): failed to open stream: No such file or directory in /home/eysdev/public_html/gothelf.php on line 32
+[16-Aug-2016 18:14:20 America/Chicago] PHP Warning:  require(../glassdoor/get-hired-search-box-inc.php): failed to open stream: No such file or directory in /home/eysdev/public_html/gothelf.php on line 32
+[16-Aug-2016 18:14:20 America/Chicago] PHP Fatal error:  require(): Failed opening required '../glassdoor/get-hired-search-box-inc.php' (include_path='.:/opt/php54/lib/php') in /home/eysdev/public_html/gothelf.php on line 32
