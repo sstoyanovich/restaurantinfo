@@ -22,9 +22,7 @@
                     <div style="float:left; margin-top:7px; margin-left:50px;" align="center">
                        <? require("/home/sstoyanovich/public_html/bootstrap_v1/incld/navigtation-inc.php"); ?>
                     </div>
-                    <div style="float:right; margin-top:7px;" align="center">
-                       <? require("/home/sstoyanovich/public_html/bootstrap_v1/incld/navigtation-inc3.php"); ?>
-                    </div>
+                    
                     <div style="clear:both"></div>
                 </div>
 
