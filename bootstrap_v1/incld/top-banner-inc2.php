@@ -7,12 +7,12 @@
             margin-right:12px;
         }
         </style>
-       
+
         <div class="navbar-wrapper" >
             <div class="container">
-                <? 
+                <?
                 /***********************************************************
-                * Top bar that shows up for wide viewports, i.e. computer 
+                * Top bar that shows up for wide viewports, i.e. computer
                 ***********************************************************/
                 ?>
                 <div class="wide_only">
@@ -20,22 +20,22 @@
                            <a href="/index.php"><img src="/images/layout/small-logo.jpg" width="200" height="40" alt="Restaurant Info" style="margin-right:20px;" /></a>
                     </div>
                     <div style="float:left; margin-top:7px; margin-left:50px;" align="center">
-                       <? require("/home/sstoyanovich/public_html/bootstrap_v1/incld/navigtation-inc2.php"); ?>
+                       <? require("/home/sstoyanovich/public_html/bootstrap_v1/incld/navigtation-inc.php"); ?>
                     </div>
                     <div style="float:right; margin-top:7px;" align="center">
                        <? require("/home/sstoyanovich/public_html/bootstrap_v1/incld/navigtation-inc3.php"); ?>
                     </div>
                     <div style="clear:both"></div>
                 </div>
-                
-                <? 
+
+                <?
                 /***********************************************************
                 * Top bar that shows up for wide viewports, i.e. mobile devices
                 ***********************************************************/
                 ?>
                 <div class="small_only">
                    <nav class="navbar navbar-inverse navbar-static-top">
-                        <? 
+                        <?
                         /***********************************************************
                         * Small screen logo, displays on left-hand size of nav bar
                         ***********************************************************/
@@ -43,8 +43,8 @@
                         <div class="small_logo">
                            <a href="/index.php"><img src="/images/layout/small-logo.jpg" width="200" height="40" alt="Restaurant Info" style="margin-left:20px;" /></a>
                         </div>
-                        
-                        <? 
+
+                        <?
                         /***********************************************************
                         * Small screen pop-up for drop-down navigation
                         ***********************************************************/
@@ -57,7 +57,7 @@
                               <span class="icon-bar"></span>
                             </button>
                          </div>
-          
+
                           <div id="navbar" class="navbar-collapse collapse" style="z-index:105 !important">
                               <ul class="nav navbar-nav" style="font-family: 'Poiret One', cursive; font-size:20px; z-index:105 !important">
                                   <? require("/home/sstoyanovich/public_html/bootstrap_v1/incld/navigtation-inc.php"); ?>
@@ -70,23 +70,3 @@
         </div>
 	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
