@@ -30,9 +30,6 @@ require("bootstrap_v1/incld/top-banner-inc2.php");
 					require("members/my-jobs-inc.php");
 			?>
         </div>
-        <div  class="info_page_content" style="width:95% !important">
-          require("members/edit-job-inc.php");
-        </div>
 
     <div style="clear:both"></div>
 
