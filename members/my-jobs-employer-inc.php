@@ -19,7 +19,7 @@ function verify_delete(title)
 }
 </style>
 <img src="/images/headers/jobs.jpg" width="113" height="27" alt="My Jobs" /><br /><br />
-<img src="/images/members/button-add-job.jpg" href="edit-job.php">
+<a href="edit-job.php"><img src="/images/members/button-add-job.jpg"> </a>
 <?
 	if (!$is_admin_user)
 		require("my-jobs-employer-filter-inc.php");
