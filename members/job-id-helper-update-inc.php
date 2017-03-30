@@ -16,6 +16,7 @@ while ($rs2 = mysql_fetch_object($result2))
 		$query3 = "INSERT INTO job_id_helper SET job_id=" . $job_id;
 		$result3 = mysql_query($query3) or die(mysql_error());
 	}
+	echo $job_title_id;
 /*
 	if ($job_title_id)
 	{
