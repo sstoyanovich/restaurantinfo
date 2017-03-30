@@ -142,7 +142,7 @@ function change_search_type(which)
 
   </table>
 <span id="form_category" style="display:<? if ($search_type == 'a') echo 'block'; else echo "none"; ?>">
-<?
+<? /*
     <table width="400" border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td width="30%" align="right" >Job Category&nbsp; </td>
@@ -164,7 +164,7 @@ function change_search_type(which)
       <td colspan="2" height="7"></td>
     </tr>
     </table>
- ?>
+*/ ?>
 </span>
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
