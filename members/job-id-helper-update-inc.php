@@ -8,7 +8,7 @@ while ($rs2 = mysql_fetch_object($result2))
 
 	$job_id = stripslashes($rs2->job_id);
 	$job_title_id = stripslashes($rs2->job_title_id);
-	echo($job_id);
+	echo($job_title_id);
 	echo("<br><br>");
 
 	$query3 = "SELECT job_id_helper_id FROM job_id_helper WHERE job_id=" . $job_id;
@@ -20,8 +20,6 @@ echo($has_entry);
 		$query3 = "INSERT INTO job_id_helper SET job_id=" . $job_id;
 		$result3 = mysql_query($query3) or die(mysql_error());
 	}
-echo("after first if");
-echo("<br>");
 	if ($job_title_id)
 	{
 		$query3 = "SELECT job_title FROM job_titles WHERE job_title_id=" . $job_title_id;
