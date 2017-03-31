@@ -32,7 +32,7 @@ while ($rs2 = mysql_fetch_object($result2))
 
 		if ($job_title)
 		{
-			echo "Inside of job title if";
+			
 			$query3 = "UPDATE job_id_helper SET job_title_id='" . mysql_real_escape_string($job_title_id) . "', job_title_helper='" . mysql_real_escape_string($job_title) . "' WHERE job_id=" . $job_id . " LIMIT 1";
 			$result3 = mysql_query($query3) or die(mysql_error());
 		}
