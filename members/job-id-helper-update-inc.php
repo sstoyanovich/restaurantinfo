@@ -37,5 +37,5 @@ while ($rs2 = mysql_fetch_object($result2))
 	}
 }
 
-
+echo "reached end of file";
 @mysql_free_result($result2);
