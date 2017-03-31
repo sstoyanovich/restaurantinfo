@@ -2,7 +2,7 @@
 $query2 = "SELECT job_id,job_title_id,job_title FROM jobs ORDER BY job_id DESC LIMIT 100";
 $result2 = mysql_query($query2) or die(mysql_error());
 
-echo "outside of loop");
+echo "outside of loop";
 while ($rs2 = mysql_fetch_object($result2))
 {
 
