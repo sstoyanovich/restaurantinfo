@@ -2,13 +2,13 @@
 $query2 = "SELECT job_id,job_title_id FROM jobs ORDER BY job_id DESC LIMIT 100";
 $result2 = mysql_query($query2) or die(mysql_error());
 
-console.log("outside of loop");
+echo("outside of loop");
 while ($rs2 = mysql_fetch_object($result2))
 {
-	console.log("inside of loop");
+	echo("inside of loop");
 	$job_id = stripslashes($rs2->job_id);
 	$job_title_id = stripslashes($rs2->job_title_id);
-	console.log($job_id + "  " + $job_title_id);
+	echo($job_id + "  " + $job_title_id);
 
 	$query3 = "SELECT job_id_helper_id FROM job_id_helper WHERE job_id=" . $job_id;
 	$result3 = mysql_query($query3) or die(mysql_error());
