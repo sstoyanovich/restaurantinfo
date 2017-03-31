@@ -17,7 +17,7 @@ while ($rs2 = mysql_fetch_object($result2))
 echo($has_entry);
 	if (!$has_entry)
 	{
-		$query3 = "INSERT INTO job_id_helper SET job_id=" . $job_id;
+		$query3 = "INSERT INTO job_id_helper SET job_id=" . $job_id . ",job_title_id=" . $job_title_id;
 		$result3 = mysql_query($query3) or die(mysql_error());
 	}
 	if ($job_title_id)
