@@ -22,7 +22,7 @@ while ($rs2 = mysql_fetch_object($result2))
 
 	if (!$has_entry)
 	{
-		$query3 = "INSERT INTO job_id_helper SET job_id=" . $job_id . ",job_title_id=" . $job_title_id . ",job_title_helper=" . $job_title;
+		$query3 = "INSERT INTO job_id_helper SET job_id=" . $job_id . ",job_title_id=" . $job_title_id ;
 		$result3 = mysql_query($query3) or die(mysql_error());
 		echo "inserted new jobs into job id helper";
 	}
