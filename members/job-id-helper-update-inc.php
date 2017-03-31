@@ -11,6 +11,10 @@ while ($rs2 = mysql_fetch_object($result2))
 	$job_title = stripslashes($rs2->job_title);
 	echo($job_title_id);
 	echo("<br><br>");
+	echo($job_title);
+	echo("<br><br>");
+	echo($job_id);
+	echo("<br><br>");
 
 	$query3 = "SELECT job_id_helper_id FROM job_id_helper WHERE job_id=" . $job_id;
 	$result3 = mysql_query($query3) or die(mysql_error());
