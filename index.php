@@ -22,9 +22,8 @@ require("bootstrap_v1/incld/page_start_inc.php");
     <? require("bootstrap_v1/incld/footer_inc.php"); ?>
 
 </div>
-        
+
 <div class="clear"></div>
-    
+
 <?
 require("bootstrap_v1/incld/page_end_inc.php");
-
