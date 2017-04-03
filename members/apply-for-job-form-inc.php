@@ -10,7 +10,7 @@
 -->
 </style>
 
-<? 
+<?
 $job_id = $_GET["job_id"];
 if (!$job_id) $job_id = 0;
 
@@ -18,7 +18,7 @@ $candidate_member_id = $_SESSION["member_id"];
 if (!$candidate_member_id) $candidate_member_id = 0;
 
 if ($job_id && $candidate_member_id)
-{	
+{
 	$query3 = "SELECT * FROM members WHERE member_id='" . mysql_real_escape_string($candidate_member_id) . "'";
 	if ($debug_msgs) echo $query3 . "<br />";
 	$result3 = mysql_query($query3) or die(mysql_error());
@@ -77,31 +77,6 @@ if ($job_id && $candidate_member_id)
       <tr>
         <td colspan="2" height="10" ></td>
       </tr>
-      <tr>
-        <td align="right"><sup style="color:#FF0000">*</sup><strong>Address</strong> &nbsp; </td>
-        <td align="left"><input type="text" name="address" size="40" maxlength="255" value="<?=$address?>" onfocus="this.select();"></td>
-      </tr>
-      <tr>
-        <td align="right">Address 2</strong> &nbsp; </td>
-        <td align="left"><input type="text" name="address2" size="40" maxlength="255" value="<?=$address2?>" onfocus="this.select();"></td>
-      </tr>
-
-      <tr>
-        <td align="right"><sup style="color:#FF0000">*</sup><strong>City</strong> &nbsp; </td>
-        <td align="left"><input type="text" name="city" size="40" maxlength="255" value="<?=$city?>" onfocus="this.select();"></td>
-      </tr>
-      <tr>
-        <td align="right"><div id="state_star"><sup style="color:#FF0000">*</sup><strong>State</strong> &nbsp; </div></td>
-        <td align="left"><select name="state">
-            <option value=''>Select</option>
-            <? $state = $_GET["state"]; require("incld/state_list_inc.php"); ?>
-        </select></td>
-      </tr>
-
-      <tr>
-        <td align="right"><sup style="color:#FF0000">*</sup><strong>Zip Code</strong> &nbsp; </td>
-        <td align="left"><input type="text" name="zip" size="5" maxlength="5" value="<?=$zip?>"></td>
-      </tr>
 
       <tr>
         <td colspan="2" height="10" ></td>
@@ -110,16 +85,8 @@ if ($job_id && $candidate_member_id)
         <td align="right"><strong>Phone</strong> &nbsp; </td>
         <td align="left">
 (<input type="text" name="phone_area_code" size="3" maxlength="3" style="width:32px;" value="<?=$phone_area_code?>" onfocus="this.select();">)&nbsp;
-<input  type="text" name="phone_prefix"    size="3" maxlength="3" style="width:32px;" value="<?=$phone_prefix?>"    onfocus="this.select();"> - 
+<input  type="text" name="phone_prefix"    size="3" maxlength="3" style="width:32px;" value="<?=$phone_prefix?>"    onfocus="this.select();"> -
 <input  type="text" name="phone_last_4"    size="4" maxlength="4" style="width:45px;" value="<?=$phone_last_4?>"    onfocus="this.select();">
-        </td>
-      </tr>
-      <tr>
-        <td align="right"><strong>Mobile Phone</strong> &nbsp; </td>
-        <td align="left">
-(<input type="text" name="cell_phone_area_code" size="3" maxlength="3" style="width:32px;" value="<?=$cell_phone_area_code?>" onfocus="this.select();">)&nbsp;
-<input  type="text" name="cell_phone_prefix"    size="3" maxlength="3" style="width:32px;" value="<?=$cell_phone_prefix?>"    onfocus="this.select();"> - 
-<input  type="text" name="cell_phone_last_4"    size="4" maxlength="4" style="width:45px;" value="<?=$cell_phone_last_4?>"    onfocus="this.select();">
         </td>
       </tr>
       <tr>
@@ -132,7 +99,7 @@ if ($job_id && $candidate_member_id)
 
 <? /*
       <tr>
-        <td colspan="2" height="19"></td>  
+        <td colspan="2" height="19"></td>
       </tr>
       <tr style="background-color:#EEEEEE">
         <td height="27"  align="left" colspan="2">&nbsp; <strong>Resume</strong> (select one option below):</td>
@@ -140,7 +107,7 @@ if ($job_id && $candidate_member_id)
       <tr>
         <td colspan="2" height="12"></td>
       </tr>
-      
+
 <? if ($resume_file) { ?>
       <tr>
           <td align="left"  valign="top"><input name="resume_option" type="radio" value="1" checked="checked" /> Use Resume on File:</strong>: &nbsp;</td>
@@ -178,13 +145,13 @@ if ($job_id && $candidate_member_id)
       <td colspan="2" align="left"><textarea name="pasted_resume" style="width:100%" rows="5" onfocus="this.select();"></textarea></td>
     </tr>
  */
- ?> 
-  
+ ?>
+
       <tr>
-        <td colspan="2" height="19"></td>  
+        <td colspan="2" height="19"></td>
       </tr>
       <tr style="background-color:#EEEEEE">
-        <td height="27"  align="left" colspan="2">&nbsp; <strong>Comments to Employer </strong></td>
+        <td height="27"  align="left" colspan="2">&nbsp; <strong>Cover Letter </strong></td>
       </tr>
       <tr>
         <td colspan="2" height="12"></td>
@@ -198,14 +165,14 @@ if ($job_id && $candidate_member_id)
       <tr>
         <td align="right">&nbsp;</td>
         <td align="left">
-      
-        <input type="submit" name="submit" value="Apply for Job" onClick="return check_apply_form();"> 
+
+        <input type="submit" name="submit" value="Apply for Job" onClick="return check_apply_form();">
       </tr>
       <tr>
         <td colspan="2" height="20" >&nbsp;</td>
       </tr>
     </table>
-    </form>			
+    </form>
 <?
 }
 ?>
