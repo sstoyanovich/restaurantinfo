@@ -4,7 +4,7 @@ require("bootstrap_v1/incld/db.php");
 require_once("bootstrap_v1/incld/utils.php");
 require_once("bootstrap_v1/incld/config.php");
 
-$debug_msgs = 1;
+$debug_msgs = 0;
 
 $token       		= clean_post_var($_POST["token"]);
 $sid         		= clean_post_var($_POST["sid"]);
@@ -163,7 +163,6 @@ if ($token && $token == $_SESSION['token'] && $sid && $sid == session_id() && $e
 
 		$members_email = "eysken@comcast.net";
 		$email_result = mail($members_email, $subject, $email_content, $headers);
-		echo $email_result;
 		if ($debug_msgs) echo "email_result = $email_result<br />";
 
 		$query2 = "UPDATE job_applications_local SET email_send_result='" . mysql_real_escape_string($email_result) . "' WHERE job_applications_local_id=" . $job_applications_local_id . " LIMIT 1";
