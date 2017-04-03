@@ -4,7 +4,7 @@ require("bootstrap_v1/incld/db.php");
 require_once("bootstrap_v1/incld/utils.php");
 require_once("bootstrap_v1/incld/config.php");
 
-$debug_msgs = 0;
+$debug_msgs = 1;
 
 $token       		= clean_post_var($_POST["token"]);
 $sid         		= clean_post_var($_POST["sid"]);
