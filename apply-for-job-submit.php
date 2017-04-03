@@ -162,8 +162,8 @@ if ($token && $token == $_SESSION['token'] && $sid && $sid == session_id() && $e
 		}
 
 		$members_email = "eysken@comcast.net";
-		echo $email_result;
 		$email_result = mail($members_email, $subject, $email_content, $headers);
+		echo $email_result;
 		if ($debug_msgs) echo "email_result = $email_result<br />";
 
 		$query2 = "UPDATE job_applications_local SET email_send_result='" . mysql_real_escape_string($email_result) . "' WHERE job_applications_local_id=" . $job_applications_local_id . " LIMIT 1";
