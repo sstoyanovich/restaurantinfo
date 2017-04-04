@@ -7,15 +7,9 @@
     Select image to upload:
     <input type="file" name="fileToUpload" value="<?=$file?>">
     <?php
+  echo $file;
+   echo pathinfo($file,PATHINFO_EXTENSION);
 
-    $uploadOk = 1;
-    $imageFileType = pathinfo($file,PATHINFO_EXTENSION);
-    if($imageFileType == "jpg"){
-    echo "jpg";
-  }
-    if($imageFileType == "pdf"){
-    echo "pdf";
-  }
     ?>
     <input type="submit" value="Upload Image" name="submit">
 </form>
