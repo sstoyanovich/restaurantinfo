@@ -172,8 +172,8 @@ function change_search_type(which)
     <td width="70%" align="left"><select name="job_title_id" id="job_title_id"  style="width:200px;">
     					<option  value="0">Select</option>
                         <?
-                            $query2 = "SELECT DISTINCT job_titles.job_title_id, job_titles.job_title FROM job_titles INNER JOIN jobs ON job_titles.job_title_id = jobs.job_title_id AND jobs.expire= 0
-																				ORDER BY  job_titles.job_title_id";
+                            $query2 = "SELECT DISTINCT job_titles.job_title_id, job_titles.job_title FROM job_titles INNER JOIN jobs ON job_titles.job_title_id = jobs.job_title_id AND jobs.expired=0
+																			ORDER BY  `job_titles`.`job_title_id`";
                             $result2 = mysql_query($query2) or die(mysql_error());
                             while ($rs2 = mysql_fetch_object($result2))
                             { ?>
