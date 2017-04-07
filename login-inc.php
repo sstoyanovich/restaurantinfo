@@ -2,32 +2,32 @@
         <img src="/images/headers/login.jpg" width="300" height="27" alt="Login to your account" />
           <br><br />
 <? } ?>
-          
+
 <?
 if ($_GET["password_reset"] == "done")
 {
 ?>
 	Your password has been reset, and an email has been sent to you with that temporary password. <br />
     You may change your password at any time.<br /><br />
-<?	
+<?
 }
-if ($_GET["failed"] == 1) 
+if ($_GET["failed"] == 1)
 {
 	if ($_GET["notvfy"] == "1")
 	{
-		?><strong style="color:#900">We are sorry, but you have not yet verified your email address.<br /><br /></strong><?	
+		?><strong style="color:#900">We are sorry, but you have not yet verified your email address.<br /><br /></strong><?
 	}
 	else if ($_GET["bademail"] == "1")
 	{
-		?><strong style="color:#900">We are sorry, but we cannot find that email address in our member's database<br /><br /></strong><?	
+		?><strong style="color:#900">We're sorry, but the email or password you entered was incorrect<br /><br /></strong><?
 	}
 	else if ($_GET["badpass"] == "1")
 	{
-		?><strong style="color:#900">We're sorry, but the password you entered was incorrect.<br /><br /></strong><?	
+		?><strong style="color:#900">We're sorry, but the email or password you entered was incorrect.<br /><br /></strong><?
 	}
-	else 
+	else
 	{
-		?><strong style="color:#900">One or more fields in the login form were empty.<br /><br /></strong><?	
+		?><strong style="color:#900">One or more fields in the login form were empty.<br /><br /></strong><?
 	}
 }
 ?>
@@ -52,7 +52,7 @@ if ($_GET["failed"] == 1)
     <td align="left"><input class="password" type="password" name="password" size="40" maxlength="255" style="width:275px" value="<?=$_GET["password"]?>" onfocus="this.select();"></td>
   </tr>
   <tr>
-    <td colspan="2" height="19"></td>  
+    <td colspan="2" height="19"></td>
   </tr>
   <tr>
     <td align="right">&nbsp;</td>
@@ -61,9 +61,9 @@ if ($_GET["failed"] == 1)
             </td>
   </tr>
 </table>
-</form>		
+</form>
 
-<? if (!$suppress_login_hdr) { ?>	
+<? if (!$suppress_login_hdr) { ?>
 <br />
 <a class="textlink" href="/register.php" style="text-decoration:underline !important" >Not a member? Sign up now.</a>
 <br><br>

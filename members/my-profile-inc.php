@@ -3,7 +3,7 @@ if ($_GET["adm"] == 1 && $_SESSION["member_id"] == 1 && $_SESSION["member_type"]
 	$member_id = $_GET["id"];
 else
 	$member_id = $_SESSION["member_id"];
-	
+
 if (!$member_id || !$_SESSION["logged_in"])
 {
 	?>Your login session may have expired.  <a href="https://restaurantinfo.com/login.php">Please login again</a><br /><?
@@ -23,7 +23,8 @@ else
 	$profile_photo = stripslashes($rs3->profile_photo);
 	$resume_file = stripslashes($rs3->resume_file);
 	$resume_upload_date = stripslashes($rs3->resume_upload_date);
-	
+	$first_name = stripcslashes($rs3->first_name);
+	$last_name = stripcslashes($rs3->last_name);
 	$work_experience = stripslashes($rs3->work_experience);
 	$education = stripslashes($rs3->education);
 	$company_logo = stripslashes($rs3->company_logo);
@@ -31,25 +32,26 @@ else
 	$key_words = stripslashes($rs3->key_words);
 	$show_profile = (stripslashes($rs3->show_profile)) ? 1 : 0;
 	@mysql_free_result($result3);
-	
+
 	if (!$_SESSION["token"])
-		$_SESSION["token"] = sha1(uniqid(rand(), TRUE)); 
+		$_SESSION["token"] = sha1(uniqid(rand(), TRUE));
 ?>
           <img src="/images/headers/profile.jpg" width="300" height="27" alt="My Profile" />
     <br />
-    
+
     <form action="update-profile.php" method="post"  name="profile" enctype="multipart/form-data">
     <input type="hidden" name="member_id" value="<?=$member_id?>" />
     <input type="hidden" name="member_token" value="<?=$member_token?>" />
     <input type="hidden" name="admin_edit" value="<?=$_GET["adm"]?>" />
     <input type="hidden" name="token"     value="<? echo $_SESSION["token"]; ?>" />
     <input type="hidden" name="sid"       value="<? echo session_id(); ?>">
-    
+
     <table width="100%"  border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td colspan="2" height="20" ></td>
       </tr>
       <tr>
+				<? echo "Welcome " . $first_name . " " . $last_name; ?>
         <td align="right" width="25%">Show Profile: &nbsp; </td>
         <td align="left" width="75%"><input name="show_profile" type="checkbox" value="1" <? if ($show_profile) echo "checked"; ?> />
         				  <em>Check this box to show your  profile</em></td>
@@ -57,8 +59,8 @@ else
       <tr>
         <td colspan="2" height="20" ></td>
       </tr>
-      
-<? if ($member_type == "C") { ?>        
+
+<? if ($member_type == "C") { ?>
 	<tr>
       <td height="22" align="right" >Job Title:&nbsp;&nbsp;</td>
       <td  align="left"><select name="job_title_id" id="job_title_id"  style="width:250px;">
@@ -76,10 +78,10 @@ else
 						</select> (select or enter below)
               </td>
       </tr>
-  
+
       <tr>
         <td align="right"></td>
-        <td align="left"><input type="text" name="job_title" size="40" maxlength="255" style="width:250px" value="<?=$job_title?>" onfocus="this.select();"> 
+        <td align="left"><input type="text" name="job_title" size="40" maxlength="255" style="width:250px" value="<?=$job_title?>" onfocus="this.select();">
        				 &nbsp;</td>
       </tr>
       <tr>
@@ -114,14 +116,14 @@ else
       <td align="right">Required Salary:&nbsp;&nbsp;</td>
       <td align="left">$<select name="required_salary" id="salary_min" onfocus="this.select();" onChange="return mark_changed();" style="width:75px;" >
           <option value="0">0</option>
-          <? 
-		  for ($dollar_value = 10; $dollar_value <= 400; $dollar_value += 5) 
-		  { 
-		  	  ?><option value="<?=$dollar_value?>" <? if ($required_salary == $dollar_value) echo "selected"; ?>>$<?=$dollar_value?>K<? if ($dollar_value == 400) echo "+"; ?></option><? 
-		  } 
+          <?
+		  for ($dollar_value = 10; $dollar_value <= 400; $dollar_value += 5)
+		  {
+		  	  ?><option value="<?=$dollar_value?>" <? if ($required_salary == $dollar_value) echo "selected"; ?>>$<?=$dollar_value?>K<? if ($dollar_value == 400) echo "+"; ?></option><?
+		  }
 		  ?>
           <option value="1" <? if ($salary_min == 1) echo "selected"; ?>>TBD</option>
-          </select> per year 
+          </select> per year
       </td>
       </tr>
       <tr>
@@ -134,8 +136,8 @@ else
       <tr>
           <td align="right"  valign="top">Resume</strong>: &nbsp;</td>
           <td align="left" resume_file="top">
-              <? if ($resume_file) { 
-			  
+              <? if ($resume_file) {
+
 			  	 if (strstr($resume_file, ".pdf"))
 				 	$icon = "/images/layout/pdf.gif";
 				else
@@ -160,9 +162,9 @@ else
         <td colspan="2" height="20" ></td>
       </tr>
 <? } ?>
-      
-<? if ($member_type == "E") { ?> 
-     
+
+<? if ($member_type == "E") { ?>
+
           <tr>
               <td align="right"  valign="top">Company Logo</strong>: &nbsp; <br /><em style="color:#999">(optional)</em> &nbsp;</td>
               <td align="left" valign="top" >
@@ -176,8 +178,8 @@ else
                   <? } ?>
               </td>
           </tr>
-          
-<? } else if ($member_type == "C") { ?>      
+
+<? } else if ($member_type == "C") { ?>
 
       <tr>
           <td align="right"  valign="top">Profile Photo</strong>: &nbsp;</td>
@@ -192,7 +194,7 @@ else
               <? } ?>
           </td>
       </tr>
-      
+
 <? } ?>
 
       <tr>
@@ -206,7 +208,7 @@ else
         <td colspan="2" height="20" ></td>
       </tr>
 
-<? if ($member_type == "C") { ?> 
+<? if ($member_type == "C") { ?>
       <tr>
         <td align="right" valign="top">Education: &nbsp;  <br /><em style="color:#999">(optional)</em> &nbsp;</td>
         <td align="left" valign="top"><textarea name="education" style="width:100%; height:150px"><?=$education?></textarea></td>
@@ -228,7 +230,7 @@ else
       <tr>
           <td colspan="2" height="10">&nbsp;</td>
       </tr>
-      
+
 <? } ?>
 
       <tr>
@@ -238,6 +240,6 @@ else
 		        </td>
       </tr>
     </table>
-    </form>			
+    </form>
 <?
 }
