@@ -1,13 +1,5 @@
-<div id="header-wrap"  style="z-index:110">
-	<div id="header-inner-wrap" style="width:95% !important; background-color:#fff">
-
-		<style>
-        .navlink {
-            font-size:18px;
-            margin-right:12px;
-        }
-        </style>
-
+<div id="header-wrap">
+    <div id="header-inner-wrap">
         <div class="navbar-wrapper" >
             <div class="container">
                 <?
@@ -22,8 +14,6 @@
                     <div style="float:left; margin-top:7px; margin-left:50px;" align="center">
                        <? require("bootstrap_v1/incld/navigtation-inc.php"); ?>
                     </div>
-                    
-                    <div style="clear:both"></div>
                 </div>
 
                 <?
@@ -54,17 +44,16 @@
                               <span class="icon-bar"></span>
                               <span class="icon-bar"></span>
                             </button>
-                         </div>
+                        </div>
 
-                          <div id="navbar" class="navbar-collapse collapse" style="z-index:105 !important">
-                              <ul class="nav navbar-nav" style="font-family: 'Poiret One', cursive; font-size:20px; z-index:105 !important">
-                                  <? require("bootstrap_v1/incld/navigtation-inc.php"); ?>
-                              </ul>
-                          </div>
-
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <? require("bootstrap_v1/incld/navigtation-inc.php"); ?>
+                            </ul>
+                        </div>
                     </nav>
                 </div>
             </div>
         </div>
-	</div>
+    </div>
 </div>

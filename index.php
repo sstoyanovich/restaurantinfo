@@ -13,7 +13,8 @@ require("bootstrap_v1/incld/page_start_inc.php");
 <div id="home">
 
 	<? require("bootstrap_v1/incld/top-banner-inc2.php"); ?>
-   	<? require("bootstrap_v1/incld/home_search_box_inc.php"); ?>
+    <? require("members/search-form-inc.php"); ?>
+   	<? //require("bootstrap_v1/incld/home_search_box_inc.php"); ?>
 	<? require("bootstrap_v1/incld/slide_show_inc.php"); ?>
    	<? require("bootstrap_v1/incld/slide_show_inc2.php"); ?>
 

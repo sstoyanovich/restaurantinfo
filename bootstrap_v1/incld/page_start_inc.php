@@ -13,19 +13,17 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/css2/home.css" media="all">
 
     <? if ($use_CDN) { ?>
 		<link rel="stylesheet" href="http<? if ($_SERVER['HTTPS']) echo 's'; ?>://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <? } else { ?>
-	    <link rel="stylesheet" href="/bootstrap_v1/css/bootstrap.css">
+	    <link rel="stylesheet" href="/css/bootstrap.css">
     <? } ?>
     
-	 <link rel="stylesheet" href="/bootstrap_v1/css/custom.css">
+    <link rel="stylesheet" href="/bootstrap_v1/css/custom.css">
      
     <? if ($this_page == "home") { ?>
 	 	<link rel="stylesheet" href="/bootstrap_v1/css/custom-home.css">
-        <link rel="stylesheet" href="/css2/style2.css" />
     <? } else if ($this_page == "products") { ?>
 	 	<link rel="stylesheet" href="/bootstrap_v1/css/custom-store-logo.css">
 	 	<link rel="stylesheet" href="/bootstrap_v1/css/custom-products.css">
@@ -37,6 +35,7 @@
     <? } ?>
 
     <link rel="stylesheet" href="/bootstrap_v1/assets/css/ie10-viewport-bug-workaround.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -44,14 +43,6 @@
       <script src="/bootstrap_v1/assets/js/respond.min.js"></script>
     <![endif]-->
 
-    <link href="/bootstrap_v1/css/style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-
-    <? if ($this_page == "register") { ?>
-	 <script type="text/javascript" src="/js/check_register_form.js"></script>
-    <? }  ?>
-
-	 <script type="text/javascript" src="/js/ajax_utils.js"></script>
-
+    
   </head>
   <body>
