@@ -20,7 +20,7 @@
                            <a href="/index.php"><img src="/images/layout/small-logo.jpg" width="200" height="40" alt="Restaurant Info" style="margin-right:20px;" /></a>
                     </div>
                     <div style="float:left; margin-top:7px; margin-left:50px;" align="center">
-                       <? require("/home/sstoyanovich/public_html/bootstrap_v1/incld/navigtation-inc.php"); ?>
+                       <? require("bootstrap_v1/incld/navigtation-inc.php"); ?>
                     </div>
                     
                     <div style="clear:both"></div>
@@ -58,7 +58,7 @@
 
                           <div id="navbar" class="navbar-collapse collapse" style="z-index:105 !important">
                               <ul class="nav navbar-nav" style="font-family: 'Poiret One', cursive; font-size:20px; z-index:105 !important">
-                                  <? require("/home/sstoyanovich/public_html/bootstrap_v1/incld/navigtation-inc.php"); ?>
+                                  <? require("bootstrap_v1/incld/navigtation-inc.php"); ?>
                               </ul>
                           </div>
 
