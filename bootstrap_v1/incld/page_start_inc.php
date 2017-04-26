@@ -19,7 +19,7 @@
     <? } else { ?>
 	    <link rel="stylesheet" href="/css/bootstrap.css">
     <? } ?>
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="/bootstrap_v1/css/custom.css">
      
     <? if ($this_page == "home") { ?>

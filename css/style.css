@@ -2,12 +2,15 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
+html {
+    color: black;
+}
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
   max-width: 1200px;
   margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* CUSTOMIZE THE NAVBAR
