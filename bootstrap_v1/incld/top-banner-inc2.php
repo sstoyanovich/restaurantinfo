@@ -3,13 +3,14 @@
 * Top bar that shows up for wide viewports, i.e. computer
 ***********************************************************/
 ?>
-<nav class="wide_only">
-    <a href="/index.php">
-        <img src="/images/layout/small-logo.jpg" alt="Restaurant Info"></a>
-    <ul>
-       <? require("bootstrap_v1/incld/navigtation-inc.php"); ?>
-    </ul>
-</div><!--/ .wide_only-->
+<header>
+    <a class="logo" href="/index.php">
+        <img src="/images/logo/restaurant-info.png" alt="Restaurant Info">
+    </a>
+    <nav class="wide_only">
+        <? require("bootstrap_v1/incld/navigtation-inc.php"); ?>
+    </nav>
+</header><!--/ .wide_only-->
 
 <?
 /***********************************************************

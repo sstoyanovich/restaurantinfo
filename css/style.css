@@ -1,20 +1,101 @@
-
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+/**
+ * =GLOBAL STYLES
+ */
 html {
-    color: black;
+    color: #0b1c38;
 }
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
   max-width: 1200px;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
 }
 
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
+/**
+ * =header
+ */
+.logo {
+    display: inline-block;
+    margin-top: 111px;
+    margin-bottom: 88px;
+}
+/**
+ * =navigation
+ */
+header {
+    position: relative;
+    background: snow;
+    padding: 0 55px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav.wide_only {
+    font-size: 2rem;
+    xxxbackground: hotpink;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 55px;
+}
+nav.wide_only ul {
+    xxxwidth: 100%;
+    xxxfloat: right;
+    xxxbackground: orange;
+}
+ul.profile {
+    float: left;
+    xxxbackground: yellow;
+}
+ul.tools {
+    float: right;
+    xxxbackground: magenta;
+}
+nav.wide_only li li {
+    xxxdisplay: block;
+    xxxdisplay: inline-block;
+    float: left;
+}
+nav.wide_only li a {
+    padding: 1.2rem 4rem;
+    margin: 0 .2rem;
+    display: block;
+    background: #0b1c38;
+    color: #fff;
+}
+#nav-signup a {
+    padding: 1.9rem 4rem;
+    border-radius: 0 0 10px 10px;
+    background: #88be43;
+}
+#nav-login a {
+    height: 0;
+    padding: 57px 2rem 0 2rem;
+    background: transparent url(/images/icon/log-in.png) no-repeat 100% 100%;
+    overflow: hidden;
+}
+
+/**
+ * =footer
+ */
+footer {
+    margin-top: 155px;
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+}
+footer li {
+    display: inline-block;
+}
+footer a {
+    color: #0b1c38;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

@@ -53,13 +53,6 @@
 /**
  * =Navigation Bar 
  */
-nav ul {
-    text-align: center;
-}
-nav li {
-    display: inline-block;
-}
-
 .navbar-wrapper {
 	background-color:#FFF !important;
 	margin:0 !important;
@@ -198,7 +191,7 @@ nav li {
 .wide_only {
 	display:none;
 	padding:0 !important;
-	margin:0 !important;
+	xxxmargin:0 !important;
 	border:none !important;
 }
 @media (min-width: 768px) {
@@ -255,18 +248,3 @@ nav li {
 	width:100% !important;
     }
 }
-/**
- * =footer
- */
-footer {
-    text-align: center;
-    }
-footer ul {
-    list-style: none;
-    }
-footer li {
-    display: inline-block;
-    }
-footer a {
-    color: grey;
-    }
