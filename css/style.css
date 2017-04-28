@@ -2,13 +2,13 @@
  * =GLOBAL STYLES
  */
 html {
-    color: #0b1c38;
 }
 body {
-  padding-bottom: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  font-family: "Open Sans", sans-serif;
+    padding-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    color: #0b1c38;
 }
 
 /**
@@ -18,13 +18,14 @@ body {
     display: inline-block;
     margin-top: 111px;
     margin-bottom: 88px;
+    z-index: 2;
+    position: relative;
 }
 /**
  * =navigation
  */
 header {
     position: relative;
-    background: snow;
     padding: 0 55px;
 }
 nav ul {
@@ -34,7 +35,6 @@ nav ul {
 }
 nav.wide_only {
     font-size: 2rem;
-    xxxbackground: hotpink;
     position: absolute;
     top: 0;
     left: 0;
@@ -42,9 +42,6 @@ nav.wide_only {
     margin: 0 55px;
 }
 nav.wide_only ul {
-    xxxwidth: 100%;
-    xxxfloat: right;
-    xxxbackground: orange;
 }
 ul.profile {
     float: left;
@@ -52,11 +49,8 @@ ul.profile {
 }
 ul.tools {
     float: right;
-    xxxbackground: magenta;
 }
 nav.wide_only li li {
-    xxxdisplay: block;
-    xxxdisplay: inline-block;
     float: left;
 }
 nav.wide_only li a {
@@ -77,7 +71,61 @@ nav.wide_only li a {
     background: transparent url(/images/icon/log-in.png) no-repeat 100% 100%;
     overflow: hidden;
 }
-
+/**
+ * =search
+ */
+.search {
+    position: relative;
+    margin: 0 55px;
+}
+.search-simple {
+    width: 100%;
+    padding-left: 280px;
+    margin-top: -230px;
+    position: relative;
+    z-index: 1;
+    float: right;
+    font-size: 18px;
+}
+.search-simple dl {
+    width: 50%;
+}
+.search-simple dd {
+    padding: 0 3rem;
+    text-transform: lowercase;
+    font-weight: bold;
+    
+}
+.search-what {
+    float: left;
+}
+.search-where {
+    float: left;
+}
+.search-simple input {
+    background: #eaf3dd;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    height: 60px;
+}
+.search-where input {
+    padding-right: 70px;
+}
+.search-what input {
+    border-right: 1px solid #9d9d9d;
+}
+.submit {
+    position: absolute;
+    right: 0;
+    top: -230px;
+    z-index: 3;
+    height: 0;
+    padding-top: 60px;
+    background: transparent url(/images/icon/search-submit.png) 0 0;
+    border: 0;
+}
 /**
  * =footer
  */

@@ -49,3 +49,4 @@
         </ul>
     </div>
 </nav>
+<? require("members/search-form-new.php"); ?>
