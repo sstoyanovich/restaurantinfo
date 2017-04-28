@@ -47,7 +47,7 @@
         <li>
             <ul class="tools">
                 <li id="nav-jobs"><a href="/jobs.php" class="<? if ($this_page == "jobs") echo "active"; ?>">Jobs</a></li>
-                <li id="nav-lookup"><a href="/search.php" class="<? if ($this_page == "search") echo "active"; ?>">Look Up</a></li>
+                <li id="nav-lookup"><a href="/search.php" class="<? if ($this_page == "search") echo "active"; ?>">Lookup</a></li>
                 <li id="nav-companies"><a href="/companies.php" class="<? if ($this_page == "companies") echo "active"; ?>">Companies</a></li>
             </ul>
         </li>

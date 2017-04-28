@@ -10,6 +10,10 @@ body {
     font-family: "Open Sans", sans-serif;
     color: #0b1c38;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
 h1 {
     color: #88be43;
     font-size: 18px;
@@ -17,7 +21,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
 }
-h1 em {
+h1 strong {
     padding: 0 30px;
     position: relative;
     top: -11px;
@@ -30,7 +34,7 @@ h1 em {
 .logo {
     display: inline-block;
     margin-top: 111px;
-    margin-bottom: 88px;
+    margin-bottom: 75px;
     z-index: 2;
     position: relative;
 }
@@ -58,7 +62,6 @@ nav.wide_only ul {
 }
 ul.profile {
     float: left;
-    xxxbackground: yellow;
 }
 ul.tools {
     float: right;
@@ -78,11 +81,10 @@ nav.wide_only li a {
     color: #fff;
 }
 #nav-signup a {
-    padding: 1.3rem 4rem;
+    padding: 1.3rem 4rem;  
     border-radius: 0 0 10px 10px;
     background: #88be43;
     font-size: 26px;
-    font-weight: bold;
 }
 #nav-login a {
     height: 0;
@@ -100,7 +102,7 @@ nav.wide_only li a {
 .search-simple {
     width: 100%;
     padding-left: 280px;
-    margin-top: -200px;
+    margin-top: -187px;
     position: relative;
     z-index: 1;
     float: right;
@@ -137,7 +139,7 @@ nav.wide_only li a {
 .submit {
     position: absolute;
     right: 0;
-    top: -200px;
+    top: -187px;
     z-index: 3;
     height: 0;
     padding-top: 60px;
@@ -165,21 +167,70 @@ footer a {
 
 /**
  * =home
+ * =company logos
  */
 .company-logos {
     list-style: none;
     margin: 0 55px;
-    margin: 0;
+    margin: -11px 55px 0;
     padding: 0;
     text-align: center;
 }
 .company-logos li {
     width: 16%;
-    padding: 1rem 20px;
+    padding: 0 15px;
     display: inline-block;
 }
 .company-logos img {
     width: 100%;
+}
+
+/**
+ * =featured company
+ */
+.featured-company {
+    margin: 66px 33px 8px;
+}
+.featured-company-image {
+    width: 60%;
+    width: 59.8%;
+    float: left;
+}
+.featured-company-image img {
+    width: 100%;
+}
+.featured-company-description {
+    width: 40%;
+    float: left;
+    padding-left: 35px;
+}
+.featured-company-description h2 {
+    font-size: 30px;
+    color: #88be43;
+    margin: -.3em 0 1.3em;
+    line-height: 1.25em;
+}
+.featured-company-description h2 strong,
+.featured-company-description h2 em {
+    display: block;
+    font-style: normal;
+}
+.featured-company-description p {
+    font-size: 18px;
+}
+.more-featured-companies dd {
+    display: none;
+}
+.more-featured-companies {
+    margin: 0 33px;
+    margin: 0 29px;
+}
+.more-featured-companies dl {
+    margin: 0;
+}
+.more-featured-companies .featured-company-image {
+    width: 20%;
+    padding: 0 4px;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
