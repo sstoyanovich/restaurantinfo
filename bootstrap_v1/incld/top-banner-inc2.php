@@ -8,7 +8,9 @@
         <img src="/images/logo/restaurant-info.png" alt="Restaurant Info">
     </a>
     <nav class="wide_only">
-        <? require("bootstrap_v1/incld/navigtation-inc.php"); ?>
+        <ul>
+            <? require("bootstrap_v1/incld/navigtation-inc.php"); ?>
+        </ul>
     </nav>
 </header><!--/ .wide_only-->
 

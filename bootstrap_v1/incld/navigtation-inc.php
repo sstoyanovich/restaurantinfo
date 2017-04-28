@@ -35,25 +35,22 @@
 ?>
         <li>
             <ul class="profile">
-                <li id="nav-signup">
+                <li class="nav-signup">
                     <a href="/register.php" class="<? if ($this_page == "signup")  echo "active"; ?>">Sign Up</a>
                 </li>
-                <li id="nav-login">
+                <li class="nav-login">
                     <a href="/login.php" title="Log In" class="<? if ($this_page == "login") echo "active"; ?>">Login</a>
                 </li>
             </ul>
         </li>
         <li>
             <ul class="tools">
-                <li id="nav-jobs"><a href="/jobs.php" class="<? if ($this_page == "jobs") echo "active"; ?>">Jobs</a></li>
-                <li id="nav-lookup"><a href="/search.php" class="<? if ($this_page == "search") echo "active"; ?>">Lookup</a></li>
-                <li id="nav-companies"><a href="/companies.php" class="<? if ($this_page == "companies") echo "active"; ?>">Companies</a></li>
+                <li class="nav-jobs"><a href="/jobs.php" class="<? if ($this_page == "jobs") echo "active"; ?>">Jobs</a></li>
+                <li class="nav-lookup"><a href="/search.php" class="<? if ($this_page == "search") echo "active"; ?>">Lookup</a></li>
+                <li class="nav-companies"><a href="/companies.php" class="<? if ($this_page == "companies") echo "active"; ?>">Companies</a></li>
             </ul>
         </li>
 <?
-    /**
-     * =toodoo: create companies page
-     */
 
     } ?>
 

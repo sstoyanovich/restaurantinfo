@@ -80,13 +80,13 @@ nav.wide_only li a {
     background: #0b1c38;
     color: #fff;
 }
-#nav-signup a {
+.wide_only .nav-signup a {
     padding: 1.3rem 4rem;  
     border-radius: 0 0 10px 10px;
     background: #88be43;
     font-size: 26px;
 }
-#nav-login a {
+.wide_only .nav-login a {
     height: 0;
     padding: 57px 2rem 0 2rem;
     background: transparent url(/images/icon/log-in.png) no-repeat 100% 100%;
