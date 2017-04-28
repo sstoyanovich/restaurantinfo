@@ -13,6 +13,7 @@ require("bootstrap_v1/incld/page_start_inc.php");
 <div id="home">
     <? require("bootstrap_v1/incld/top-banner-inc2.php"); ?>
     <? //require("members/search-form-new.php"); ?>
+    <h1><em>Grab a Job</em></h1>
     <? require("bootstrap_v1/incld/footer_inc.php"); ?>
 </div><!--/ .home-->
 <div style="width: 100%; height: 1450px; background: transparent url(/images/overlay/home-page.png) no-repeat 50% 0; opacity: .3; position: absolute; top: 0; left: 0; z-index: 100000000; display: none;"></div>
