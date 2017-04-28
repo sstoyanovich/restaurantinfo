@@ -232,6 +232,9 @@ footer a {
     width: 20%;
     padding: 0 4px;
 }
+.more-featured-companies .featured-company-image img {
+    cursor: pointer;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 

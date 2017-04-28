@@ -55,7 +55,35 @@ require("bootstrap_v1/incld/page_start_inc.php");
             </dt>
             <dd class="featured-company-description">
                 <h2>
-                    <strong>north italia</strong>
+                    <strong>Black Barn</strong>
+                    <em>75 washington pl,</em>
+                    <em>new york, ny 10011</em>
+                </h2>
+                <p>Dipsum is simply dummy text of type and scrambled to make a type specimen book.
+                </p>
+            </dd>
+        </dl>
+        <dl>
+            <dt class="featured-company-image">
+                <img alt="Morimoto" src="/images/company-image/example-company.jpg">
+            </dt>
+            <dd class="featured-company-description">
+                <h2>
+                    <strong>Morimoto</strong>
+                    <em>75 washington pl,</em>
+                    <em>new york, ny 10011</em>
+                </h2>
+                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </dd>
+        </dl>
+        <dl>
+            <dt class="featured-company-image">
+                <img alt="north italia" src="/images/company-image/example-company.jpg">
+            </dt>
+            <dd class="featured-company-description">
+                <h2>
+                    <strong>North Italia</strong>
                     <em>75 washington pl,</em>
                     <em>new york, ny 10011</em>
                 </h2>
@@ -65,57 +93,29 @@ require("bootstrap_v1/incld/page_start_inc.php");
         </dl>
         <dl>
             <dt class="featured-company-image">
-                <img alt="blue hill" src="/images/company-image/example-company.jpg">
+                <img alt="red Rooster" src="/images/company-image/example-company.jpg">
             </dt>
             <dd class="featured-company-description">
                 <h2>
-                    <strong>north italia</strong>
+                    <strong>Red Rooster</strong>
                     <em>75 washington pl,</em>
                     <em>new york, ny 10011</em>
                 </h2>
-                <p>lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <p>Since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
             </dd>
         </dl>
         <dl>
             <dt class="featured-company-image">
-                <img alt="blue hill" src="/images/company-image/example-company.jpg">
+                <img alt="ChowNow" src="/images/company-image/example-company.jpg">
             </dt>
             <dd class="featured-company-description">
                 <h2>
-                    <strong>north italia</strong>
+                    <strong>ChowNow</strong>
                     <em>75 washington pl,</em>
                     <em>new york, ny 10011</em>
                 </h2>
-                <p>lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-            </dd>
-        </dl>
-        <dl>
-            <dt class="featured-company-image">
-                <img alt="blue hill" src="/images/company-image/example-company.jpg">
-            </dt>
-            <dd class="featured-company-description">
-                <h2>
-                    <strong>north italia</strong>
-                    <em>75 washington pl,</em>
-                    <em>new york, ny 10011</em>
-                </h2>
-                <p>lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-            </dd>
-        </dl>
-        <dl>
-            <dt class="featured-company-image">
-                <img alt="blue hill" src="/images/company-image/example-company.jpg">
-            </dt>
-            <dd class="featured-company-description">
-                <h2>
-                    <strong>north italia</strong>
-                    <em>75 washington pl,</em>
-                    <em>new york, ny 10011</em>
-                </h2>
-                <p>lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <p>Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
             </dd>
         </dl>
@@ -125,6 +125,6 @@ require("bootstrap_v1/incld/page_start_inc.php");
     <? require("bootstrap_v1/incld/footer_inc.php"); ?>
 </div><!--/ .home-->
 <div style="width: 100%; height: 1450px; background: transparent url(/images/overlay/home-page.png) no-repeat 50% 0; opacity: .3; position: absolute; top: 0; left: 0; z-index: 100000000; display: none;"></div>
-require("bootstrap_v1/incld/page_end_inc.php");
 
 <?
+require("bootstrap_v1/incld/page_end_inc.php");
