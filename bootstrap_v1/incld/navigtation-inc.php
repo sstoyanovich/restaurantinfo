@@ -33,7 +33,6 @@
 	// Navigation for NON-Logged in Visitors
 	//*************************************************************
 ?>
-    <ul>
         <li>
             <ul class="profile">
                 <li id="nav-signup">
@@ -51,7 +50,6 @@
                 <li id="nav-companies"><a href="/companies.php" class="<? if ($this_page == "companies") echo "active"; ?>">Companies</a></li>
             </ul>
         </li>
-    </ul>
 <?
     /**
      * =toodoo: create companies page

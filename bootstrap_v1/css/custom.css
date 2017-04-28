@@ -51,7 +51,8 @@
 }
 
 /**
- * =Navigation Bar 
+ * =Navigation Bar
+ * toodoo: cleanup
  */
 .navbar-wrapper {
 	background-color:#FFF !important;
@@ -69,7 +70,6 @@
 .navbar 
 {
 	background-color:#274352 !important;
-	/* background-image:url(/images/layout/main-navigation-responsive-bkgnd.jpg);  */
 	background-repeat:repeat-x;
 	margin:0 !important;
 	border:none !important;
