@@ -163,6 +163,24 @@ footer a {
     padding: 1rem 2rem;
 }
 
+/**
+ * =home
+ */
+.company-logos {
+    list-style: none;
+    margin: 0 55px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.company-logos li {
+    width: 16%;
+    padding: 1rem 20px;
+    display: inline-block;
+}
+.company-logos img {
+    width: 100%;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
