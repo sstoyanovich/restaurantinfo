@@ -15,17 +15,17 @@ featuredCompany = {
     },
     clickHandler: function (e) {
         var element = e.target,
-            current = $('.featured-company dl'),
-            currentContent = current.html(),
+            canvas = $('.featured-company dl'),
+            canvasContent = canvas.html(),
             next,
             nextContent;
 
         if (element.nodeName === 'IMG') {
             next = $(element).parent().parent();
             nextContent = next.html();
-            
-            current.html(nextContent);
-            next.html(currentContent);
+            $('.current').removeClass('current');
+            canvas.html(nextContent);
+            $(element).addClass('current');
         }
         
         return false;

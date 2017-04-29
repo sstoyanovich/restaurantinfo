@@ -235,6 +235,10 @@ footer a {
 .more-featured-companies .featured-company-image img {
     cursor: pointer;
 }
+.more-featured-companies .featured-company-image img.current,
+.more-featured-companies .featured-company-image img:hover {
+    opacity: .7;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 

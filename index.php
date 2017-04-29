@@ -34,15 +34,15 @@ require("bootstrap_v1/incld/page_start_inc.php");
     <article class="featured-company clearfix">
         <dl>
             <dt class="featured-company-image">
-                <img alt="Blue Hill" src="/images/company-image/example-company.jpg">
+                <img alt="Blue Hill" src="/images/company-image/example-company-01.jpg">
             </dt>
             <dd class="featured-company-description">
                 <h2>
-                    <strong>Blue Hill</strong>
-                    <em>75 Washington Pl,</em>
-                    <em>New York, NY 10011</em>
+                    <strong>Odeon</strong>
+                    <em>80 Spring St</em>
+                    <em>New York, NY 10012</em>
                 </h2>
-                <p>Locally sourced, seasonal ingredients abound on the American menu served at this townhouse-set spot.
+                <p>Restaurateur Keith McNally's enduring Soho brasserie is the best everyday restaurant in New York City. Period. The Balth is a terrific choice for a breakfast meeting, a steak frites lunch, or special occasion dinner. If you're splurging, get the Balthazar plateaux and the chicken for two.
                 </p>
             </dd>
         </dl>
@@ -51,15 +51,15 @@ require("bootstrap_v1/incld/page_start_inc.php");
     <section class="more-featured-companies clearfix">
         <dl>
             <dt class="featured-company-image">
-                <img alt="blue hill" src="/images/company-image/example-company-01.jpg">
+                <img alt="Blue Hill" src="/images/company-image/example-company-01.jpg" class="current">
             </dt>
             <dd class="featured-company-description">
                 <h2>
-                    <strong>Black Barn</strong>
-                    <em>75 washington pl,</em>
-                    <em>new york, ny 10011</em>
+                    <strong>Odeon</strong>
+                    <em>80 Spring St</em>
+                    <em>New York, NY 10012</em>
                 </h2>
-                <p>Dipsum is simply dummy text of type and scrambled to make a type specimen book.
+                <p>Restaurateur Keith McNally's enduring Soho brasserie is the best everyday restaurant in New York City. Period. The Balth is a terrific choice for a breakfast meeting, a steak frites lunch, or special occasion dinner. If you're splurging, get the Balthazar plateaux and the chicken for two.
                 </p>
             </dd>
         </dl>
@@ -69,11 +69,11 @@ require("bootstrap_v1/incld/page_start_inc.php");
             </dt>
             <dd class="featured-company-description">
                 <h2>
-                    <strong>Morimoto</strong>
-                    <em>75 washington pl,</em>
-                    <em>new york, ny 10011</em>
+                    <strong>The Dutch</strong>
+                    <em>131 Sullivan St</em>
+                    <em>New York, NY 10012</em>
                 </h2>
-                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <p>Over the last five years, The Dutch has turned into the quintessential American restaurant that chef Andrew Carmellini and partners Josh Pickard and Luke Ostrom sought to evoke when it first opened. It’s a great choice when you’re craving a steak, a burger, or oysters, and the menu always includes plentiful seafood options as well as pastas. The Dutch is now an indelible part of the Soho landscape.
                 </p>
             </dd>
         </dl>
@@ -83,12 +83,11 @@ require("bootstrap_v1/incld/page_start_inc.php");
             </dt>
             <dd class="featured-company-description">
                 <h2>
-                    <strong>North Italia</strong>
-                    <em>75 washington pl,</em>
-                    <em>new york, ny 10011</em>
+                    <strong>Estela</strong>
+                    <em>47 E Houston St</em>
+                    <em>New York, NY 10012</em>
                 </h2>
-                <p>lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
+                <p>At Estela, Ignacio Mattos serves a set of rustic dishes that don't easily fit into any one classification. Standouts include the mussels escabeche on toast, the ricotta dumplings, and the excellent beef tartare with sunchokes. Over the last few years, the Nolita restaurant has become a popular oenophile hangout, thanks to the thoughtful wine list from Blue Hill veteran Thomas Carter. If you want to sample Estela without spending too much money or battling the crowds, go during weekend brunch.                </p>
             </dd>
         </dl>
         <dl>
@@ -97,11 +96,11 @@ require("bootstrap_v1/incld/page_start_inc.php");
             </dt>
             <dd class="featured-company-description">
                 <h2>
-                    <strong>Red Rooster</strong>
-                    <em>75 washington pl,</em>
-                    <em>new york, ny 10011</em>
+                    <strong>Oiji</strong>
+                    <em>119 1st Ave</em>
+                    <em>New York, NY 10003</em>
                 </h2>
-                <p>Since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <p>At this small East Village restaurant, chefs Tae Kyung Ku and Brian Kim serve traditional Korean dishes executed with a few modern touches. The ideal meal starts with the house-made soba noodles, braised beef, and mackerel smoked over pine needles, ended sweetly by the honey butter chips with ice cream. Most of the shareable small plates are priced in the teens, and the menu also includes a $38 ssam platter for two.
                 </p>
             </dd>
         </dl>
@@ -111,11 +110,11 @@ require("bootstrap_v1/incld/page_start_inc.php");
             </dt>
             <dd class="featured-company-description">
                 <h2>
-                    <strong>ChowNow</strong>
-                    <em>75 washington pl,</em>
-                    <em>new york, ny 10011</em>
+                    <strong>The Breslin</strong>
+                    <em>16 W 29th St</em>
+                    <em>New York, NY 10001</em>
                 </h2>
-                <p>Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <p>The Breslin has become much more than just the gastropub in the Ace Hotel. After seven years, it can now rightly be considered one of New York City’s most accomplished meat restaurants. From large format lamb feasts to full English breakfasts to the game-changing lamb burger to what is quite possibly NYC’s finest rib steak, The Breslin is firing on all cylinders.
                 </p>
             </dd>
         </dl>
