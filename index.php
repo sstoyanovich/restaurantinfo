@@ -51,7 +51,7 @@ require("bootstrap_v1/incld/page_start_inc.php");
     <section class="more-featured-companies clearfix">
         <dl>
             <dt class="featured-company-image">
-                <img alt="blue hill" src="/images/company-image/example-company.jpg">
+                <img alt="blue hill" src="/images/company-image/example-company-01.jpg">
             </dt>
             <dd class="featured-company-description">
                 <h2>
@@ -65,7 +65,7 @@ require("bootstrap_v1/incld/page_start_inc.php");
         </dl>
         <dl>
             <dt class="featured-company-image">
-                <img alt="Morimoto" src="/images/company-image/example-company.jpg">
+                <img alt="Morimoto" src="/images/company-image/example-company-02.jpg">
             </dt>
             <dd class="featured-company-description">
                 <h2>
@@ -79,7 +79,7 @@ require("bootstrap_v1/incld/page_start_inc.php");
         </dl>
         <dl>
             <dt class="featured-company-image">
-                <img alt="north italia" src="/images/company-image/example-company.jpg">
+                <img alt="north italia" src="/images/company-image/example-company-03.jpg">
             </dt>
             <dd class="featured-company-description">
                 <h2>
@@ -93,7 +93,7 @@ require("bootstrap_v1/incld/page_start_inc.php");
         </dl>
         <dl>
             <dt class="featured-company-image">
-                <img alt="red Rooster" src="/images/company-image/example-company.jpg">
+                <img alt="red Rooster" src="/images/company-image/example-company-04.jpg">
             </dt>
             <dd class="featured-company-description">
                 <h2>
@@ -107,7 +107,7 @@ require("bootstrap_v1/incld/page_start_inc.php");
         </dl>
         <dl>
             <dt class="featured-company-image">
-                <img alt="ChowNow" src="/images/company-image/example-company.jpg">
+                <img alt="ChowNow" src="/images/company-image/example-company-05.jpg">
             </dt>
             <dd class="featured-company-description">
                 <h2>
