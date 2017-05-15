@@ -36,7 +36,13 @@ $resume_file_name		= $_FILES['resume_file']['name'];
 $resume_file_tmp_name	= $_FILES['resume_file']['tmp_name'];
 
 
-// resume_file
+
+if($resume_file_name){
+	require("upload2.php");// resume_file
+}
+else {
+	$uploadOk = 1;
+}
 
 if ($debug_msgs)
 {
@@ -61,9 +67,11 @@ if ($debug_msgs)
 	echo "phone =  ($phone_area_code) $phone_prefix - $phone_last_4<br />";
 	echo "cell_phone =  ($cell_phone_area_code) $cell_phone_prefix - $cell_phone_last_4<br /><br />";
 	echo "comments =  $comments<br /><br />";
+	echo $pasted_resume;
+	echo $uploadOk;
 }
 
-if ($token && $token == $_SESSION['token'] && $sid && $sid == session_id() && $employer_member_id && $job_id && $job_code && $candidate_member_id)
+if ($token && $token == $_SESSION['token'] && $sid && $sid == session_id() && $employer_member_id && $job_id && $job_code && $candidate_member_id && $uploadOk)
 {
 	$query3 = "SELECT email_for_job_applies,job_title,job_title_id,member_id FROM jobs WHERE apply_locally=1 AND job_id='" . mysql_real_escape_string($job_id) . "'";
 	if ($debug_msgs) echo $query3 . "<br />";
@@ -114,9 +122,11 @@ if ($token && $token == $_SESSION['token'] && $sid && $sid == session_id() && $e
 		$query = "INSERT INTO job_applications_local SET
 					  employer_member_id='" . mysql_real_escape_string($employer_member_id) . "',
 					  candidate_member_id='" . mysql_real_escape_string($candidate_member_id) . "',
+						resume_path='" . mysql_real_escape_string($target_file) . "',
 					  job_id='" . mysql_real_escape_string($job_id) . "',
 					  job_code='" . mysql_real_escape_string($job_code) . "',
 					  email_for_job_applies='" . mysql_real_escape_string($email_for_job_applies) . "',
+						resume_pasted='" . mysql_real_escape_string($pasted_resume) . "',
 					  date_applied=NOW(),
 					  time_applied=NOW(),
 					  unix_time_applied='" . time() . "'";
@@ -141,7 +151,13 @@ if ($token && $token == $_SESSION['token'] && $sid && $sid == session_id() && $e
 		$email_content .= "Email: $email<br>\n";
 		$email_content .= "Phone:  ($phone_area_code) $phone_prefix - $phone_last_4<br>\n";
 		$email_content .= "Cell Phone:  ($cell_phone_area_code) $cell_phone_prefix - $cell_phone_last_4<br>\n";
-		$email_content .= "Comments: $comments<br>\n";
+		if($pasted_resume){
+			$email_content .="Resume: $pasted_resume<br>\n";
+		}
+		else {
+			$attachement = $target_file;
+		}
+		$email_content .= "Cover letter: $comments<br>\n";
 
 		$email_content .= "<a href=\"http://www." . $g_website_domain . "/view-profile.php?member_id=" . $member_id . "&token=" . $member_token . "\" target=\"_top\">View this Candidates Profile</a><br><br>";
 

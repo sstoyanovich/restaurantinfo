@@ -97,7 +97,7 @@ if ($job_id && $candidate_member_id)
         <td align="left"><input type="text" name="email" size="40" maxlength="255" value="<?=$email?>" onfocus="this.select();" onBlur="return check_email_used();"></td>
       </tr>
 
-<? /*
+
       <tr>
         <td colspan="2" height="19"></td>
       </tr>
@@ -131,7 +131,7 @@ if ($job_id && $candidate_member_id)
   <? } else { ?>
       <tr>
           <td align="left"  valign="top"><input name="resume_option" type="radio" value="2" checked="checked" /> Upload Your Resume</strong>: &nbsp;</td>
-          <td align="left" resume_file="top"><input type="file" name="resume_file" size="20"></td>
+          <td align="left" resume_file="top"><input type="file" name="fileToUpload" size="20"></td>
       </tr>
   <? } ?>
       <tr>
@@ -144,8 +144,8 @@ if ($job_id && $candidate_member_id)
     <tr>
       <td colspan="2" align="left"><textarea name="pasted_resume" style="width:100%" rows="5" onfocus="this.select();"></textarea></td>
     </tr>
- */
- ?>
+
+
 
       <tr>
         <td colspan="2" height="19"></td>
@@ -167,6 +167,7 @@ if ($job_id && $candidate_member_id)
         <td align="left">
 
         <input type="submit" name="submit" value="Apply for Job" onClick="return check_apply_form();">
+				<input type="submit" value="Upload Image" name="submit">
       </tr>
       <tr>
         <td colspan="2" height="20" >&nbsp;</td>
