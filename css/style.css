@@ -1,40 +1,244 @@
-
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
+/**
+ * =GLOBAL STYLES
+ */
+html {
+}
 body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
+    padding-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    color: #0b1c38;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+h1 {
+    color: #88be43;
+    font-size: 18px;
+    border-top: 2px solid #88be43;
+    text-align: center;
+    text-transform: uppercase;
+}
+h1 strong {
+    padding: 0 30px;
+    position: relative;
+    top: -11px;
+    background: #fff;
 }
 
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
+/**
+ * =header
+ */
+.logo {
+    display: inline-block;
+    margin-top: 111px;
+    margin-bottom: 75px;
+    z-index: 2;
+    position: relative;
+}
+/**
+ * =navigation
+ */
+header {
+    position: relative;
+    padding: 0 55px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav.wide_only {
+    font-size: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 55px;
+}
+nav.wide_only ul {
+}
+ul.profile {
+    float: left;
+}
+ul.tools {
+    float: right;
+}
+.tools a {
+    width: 211px;
+    text-align: center;
+}
+nav.wide_only li li {
+    float: left;
+}
+nav.wide_only li a {
+    padding: 1.2rem 4rem;
+    margin: 0 .2rem;
+    display: block;
+    background: #0b1c38;
+    color: #fff;
+}
+.wide_only .nav-signup a {
+    padding: 1.3rem 4rem;  
+    border-radius: 0 0 10px 10px;
+    background: #88be43;
+    font-size: 26px;
+}
+.wide_only .nav-login a {
+    height: 0;
+    padding: 57px 2rem 0 2rem;
+    background: transparent url(/images/icon/log-in.png) no-repeat 100% 100%;
+    overflow: hidden;
+}
+/**
+ * =search
+ */
+.search {
+    position: relative;
+    margin: 0 55px;
+}
+.search-simple {
+    width: 100%;
+    padding-left: 280px;
+    margin-top: -187px;
+    position: relative;
+    z-index: 1;
+    float: right;
+    font-size: 18px;
+}
+.search-simple dl {
+    width: 50%;
+}
+.search-simple dd {
+    padding: .3rem 4rem;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+.search-what {
+    float: left;
+}
+.search-where {
+    float: left;
+}
+.search-simple input {
+    background: #eaf3dd;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 1rem 1rem 1rem 4rem;
+    height: 60px;
+}
+.search-where input {
+    padding-right: 70px;
+}
+.search-what input {
+    border-right: 1px solid #9d9d9d;
+}
+.submit {
+    position: absolute;
+    right: 0;
+    top: -187px;
+    z-index: 3;
+    height: 0;
+    padding-top: 60px;
+    background: transparent url(/images/icon/search-submit.png) 0 0;
+    border: 0;
+}
+/**
+ * =footer
+ */
+footer {
+    margin-top: 155px;
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+}
+footer li {
+    display: inline-block;
+}
+footer a {
+    color: #0b1c38;
+    font-size: 2rem;
+    padding: 1rem 2rem;
 }
 
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
+/**
+ * =home
+ * =company logos
+ */
+.company-logos {
+    list-style: none;
+    margin: 0 55px;
+    margin: -11px 55px 0;
+    padding: 0;
+    text-align: center;
 }
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
+.company-logos li {
+    width: 16%;
+    padding: 0 15px;
+    display: inline-block;
 }
-.navbar-wrapper .navbar .container {
-  width: auto;
+.company-logos img {
+    width: 100%;
 }
 
-
+/**
+ * =featured company
+ */
+.featured-company {
+    margin: 66px 33px 8px;
+}
+.featured-company-image {
+    width: 60%;
+    width: 59.8%;
+    float: left;
+}
+.featured-company-image img {
+    width: 100%;
+}
+.featured-company-description {
+    width: 40%;
+    float: left;
+    padding-left: 35px;
+}
+.featured-company-description h2 {
+    font-size: 30px;
+    color: #88be43;
+    margin: -.3em 0 1.3em;
+    line-height: 1.25em;
+}
+.featured-company-description h2 strong,
+.featured-company-description h2 em {
+    display: block;
+    font-style: normal;
+}
+.featured-company-description p {
+    font-size: 18px;
+}
+.more-featured-companies dd {
+    display: none;
+}
+.more-featured-companies {
+    margin: 0 33px;
+    margin: 0 29px;
+}
+.more-featured-companies dl {
+    margin: 0;
+}
+.more-featured-companies .featured-company-image {
+    width: 20%;
+    padding: 0 4px;
+}
+.more-featured-companies .featured-company-image img {
+    cursor: pointer;
+}
+.more-featured-companies .featured-company-image img.current,
+.more-featured-companies .featured-company-image img:hover {
+    opacity: .7;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
