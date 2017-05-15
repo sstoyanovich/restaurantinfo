@@ -25,7 +25,7 @@ else if ($_GET["new_search"] == 1)
 	$_SESSION["rev"] 			= $rev 				= '';
 	$_SESSION["token"] 			= $token 			= '';
 	$_SESSION["sid"] 			= $sid 				= '';
-	$_SESSION["search_type"] 	= $search_type 		= '';	
+	$_SESSION["search_type"] 	= $search_type 		= '';
 	$_SESSION["search_terms"] 	= $search_terms 	= '';
 	$_SESSION["state"] 			= $state 			= '';
 	$_SESSION["category"] 		= $category 		= '';
@@ -60,29 +60,29 @@ else // Search has been submitted from search form, so save parms.
 if (!$search_type) $search_type = 's';
 
 if (!$_SESSION["token"])
-    $_SESSION["token"] = sha1(uniqid(rand(), TRUE)); 
+    $_SESSION["token"] = sha1(uniqid(rand(), TRUE));
 
 if ($debug_msgs)
 {
-	echo "token = $token<br />";	
-	echo "session token = " . $_SESSION["token"] . "<br />";	
-	echo "sid = $sid<br />";	
-	echo "session sid = " . session_id() . "<br />";	
-	echo "page = $page<br />";	
-	echo "sort = $sort<br />";	
-	echo "rev = $rev<br />";	
-	echo "search_type = $search_type<br />";	
-	echo "search_terms = $search_terms<br />";	
-	echo "state = $state<br />";	
-	echo "category = $category<br />";	
-	echo "job_title_id = $job_title_id<br />";	
-	echo "job_title = $job_title<br />";	
-	echo "hourly_rate = $hourly_rate<br />";	
-	echo "salary_min = $salary_min<br />";	
-	echo "salary_max = $salary_max<br />";	
-	echo "years_min = $years_min<br />";	
-	echo "years_max = $years_max<br />";	
-	echo "fav_email = $fav_email<br />";	
+	echo "token = $token<br />";
+	echo "session token = " . $_SESSION["token"] . "<br />";
+	echo "sid = $sid<br />";
+	echo "session sid = " . session_id() . "<br />";
+	echo "page = $page<br />";
+	echo "sort = $sort<br />";
+	echo "rev = $rev<br />";
+	echo "search_type = $search_type<br />";
+	echo "search_terms = $search_terms<br />";
+	echo "state = $state<br />";
+	echo "category = $category<br />";
+	echo "job_title_id = $job_title_id<br />";
+	echo "job_title = $job_title<br />";
+	echo "hourly_rate = $hourly_rate<br />";
+	echo "salary_min = $salary_min<br />";
+	echo "salary_max = $salary_max<br />";
+	echo "years_min = $years_min<br />";
+	echo "years_max = $years_max<br />";
+	echo "fav_email = $fav_email<br />";
 }
 
 ?>
@@ -107,14 +107,14 @@ function change_search_type(which)
 <table width="350" border="<? if ($this_page == "home") echo '1'; else echo '0'; ?>" style="background-color:#fff; box-shadow:5px 5px 5px #333; border-collapse:collapse;">
     <tr>
       <td>
-      
+
     <form action="search.php" method="get"  name="search">
     <input type="hidden" name="member_id" value="<? echo $_SESSION["member_id"]; ?>" />
     <input type="hidden" name="token"     value="<? echo $_SESSION["token"]; ?>" />
     <input type="hidden" name="sid"       value="<? echo session_id(); ?>">
 <? if ($this_page == "home") { ?>
     <input type="hidden" name="search_type" value="s">
-<? } ?> 
+<? } ?>
 
     <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="ffffff" style="background-color:#fff;">
   <tr>
@@ -131,7 +131,7 @@ function change_search_type(which)
   <tr>
     <td colspan="2" height="15"></td>
   </tr>
-<? } ?> 
+<? } ?>
   <tr>
     <td width="30%" align="right" >Keywords&nbsp; </td>
     <td width="70%" align="left"><input name="search_terms" id="search_terms" type="text" value="<?=$search_terms?>" style="width:200px;"></td>
@@ -139,7 +139,7 @@ function change_search_type(which)
   <tr>
     <td colspan="2" height="15"></td>
   </tr>
- 
+
   </table>
 <span id="form_category" style="display:<? if ($search_type == 'a') echo 'block'; else echo "none"; ?>">
 <? /*
@@ -172,7 +172,8 @@ function change_search_type(which)
     <td width="70%" align="left"><select name="job_title_id" id="job_title_id"  style="width:200px;">
     					<option  value="0">Select</option>
                         <?
-                            $query2 = "SELECT * FROM job_titles ORDER BY job_title";
+                            $query2 = "SELECT DISTINCT job_titles.job_title_id, job_titles.job_title FROM job_titles INNER JOIN jobs ON job_titles.job_title_id = jobs.job_title_id AND jobs.expired=0
+																			ORDER BY  `job_titles`.`job_title_id`";
                             $result2 = mysql_query($query2) or die(mysql_error());
                             while ($rs2 = mysql_fetch_object($result2))
                             { ?>
@@ -195,7 +196,7 @@ function change_search_type(which)
     </table>
 
 <span id="form_sallary" style="display:<? if ($search_type == 'a') echo 'block'; else echo "none"; ?>">
-    
+
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="30%" align="right">State&nbsp; </td>
@@ -256,7 +257,7 @@ function change_search_type(which)
         <option value='WY' <? if ($state == 'WY') echo "selected"; ?>>Wyoming</option>
     </select>
     </td>
-  </tr>  
+  </tr>
   <tr>
     <td colspan="2" height="12"></td>
   </tr>
