@@ -16,10 +16,7 @@ require("bootstrap_v1/incld/top-banner-inc2.php");
     <div class="row">
     
         <div class="info_page_content">
-			<? require("bootstrap_v1/content/jobs-inc.php"); ?>
-            
-            
-            <br><br><br><br><br><br><br><br>
+        <? require("bootstrap_v1/content/jobs-inc.php"); ?>
             
         </div>
 

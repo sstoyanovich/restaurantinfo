@@ -1,7 +1,3 @@
-<style type="text/css">
-.tbl_data {font-size: 12px}
-</style>
-
 <?
 $debug_msgs = 0;
 
