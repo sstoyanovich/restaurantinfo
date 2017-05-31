@@ -245,6 +245,41 @@ footer a {
 .more-featured-companies .featured-company-image img:hover {
     opacity: .7;
 }
+/**
+ * =jobs page
+ */
+#jobs-listing {
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 60%;
+    position: relative;
+    list-style: none;
+}
+#jobs-listing li {
+    padding: 1em;
+    background: #ddd;
+    border-bottom: 2px solid #aaa;
+}
+#jobs-listing .current {
+    background: #88be43;
+    color: #fff;
+}
+#jobs-listing .long-description {
+    display: none;
+    color: #0b1c38;
+}
+#jobs-listing .current .long-description {
+    display: block;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+#jobs-listing h3 {
+    font-size: 16px;
+    color: #88be43;
+    text-decoration: underline;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 

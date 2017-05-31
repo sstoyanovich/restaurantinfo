@@ -12,22 +12,13 @@ require("bootstrap_v1/incld/top-banner-inc2.php");
 
 ?>
 <div class="container marketing">
-    
-    <div class="row">
-    
-        <div class="info_page_content">
-        <? require("bootstrap_v1/content/jobs-inc.php"); ?>
+    <h1><strong>Jobs</strong></h1>
+    <h2>Search Results</h2>
+    <? require("bootstrap_v1/content/jobs-inc.php"); ?>
             
-        </div>
-
-    <div style="clear:both"></div>
-        
-    <? require("bootstrap_v1/incld/footer_inc.php"); ?>
-        
-    </div>
-    
 </div>
-<?
+
+<div style="clear:both"></div>
+        
+<? require("bootstrap_v1/incld/footer_inc.php");
 require("bootstrap_v1/incld/page_end_inc.php");
-
-

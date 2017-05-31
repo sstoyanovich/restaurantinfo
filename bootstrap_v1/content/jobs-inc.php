@@ -5,8 +5,11 @@ $result = mysql_query($query) or die(mysql_error());
 ?>
 <ul id="jobs-listing">
 
-<?  while ($rs = mysql_fetch_object($result)): ?>
-    <li>
+<?  
+    $counter = 0;
+    
+    while ($rs = mysql_fetch_object($result)): ?>
+    <li<? if (0 == $counter) { echo ' class="current"'; } ?>>
         <dl>
             <dt><? echo $rs->job_title; ?></dt>
             <dd><? echo $rs->contact_company . " &mdash; " . $rs->city . ", " . $rs->state; ?>
@@ -24,7 +27,8 @@ $result = mysql_query($query) or die(mysql_error());
             </dd>
         </dl>
     </li>
-<?  endwhile; ?>
+<?  $counter = $counter + 1;
+    endwhile; ?>
 </ul><!--/ .jobs-listing-->
 <?
     mysql_free_result($result)
