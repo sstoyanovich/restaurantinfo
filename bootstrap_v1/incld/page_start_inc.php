@@ -45,4 +45,4 @@
 
     
   </head>
-  <body>
+  <body<? if ($this_page) { echo ' class="body-' . $this_page . '"'; } ?>>

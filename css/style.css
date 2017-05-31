@@ -146,6 +146,12 @@ nav.wide_only li a {
     background: transparent url(/images/icon/search-submit.png) 0 0;
     border: 0;
 }
+.search-tools {
+    display: none;
+}
+.body-search .search-tools {
+    display: block;
+}
 /**
  * =footer
  */
