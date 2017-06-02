@@ -280,6 +280,32 @@ footer a {
     color: #88be43;
     text-decoration: underline;
 }
+/**
+ * =register form
+ */
+.register-form {
+    background: #eaf3dd;
+    width: 60%;
+    padding: 2em;
+    float: right;
+}
+.register-form td {
+    padding-bottom: 1em;
+}
+.register-form input {
+    border: 1px solid #9d9d9d;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background: #eaf3dd;
+}
+.register-form input[type=submit] {
+    background: #88be43;
+    padding: 1em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3em;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 

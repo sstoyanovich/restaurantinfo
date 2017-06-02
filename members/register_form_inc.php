@@ -39,7 +39,8 @@
 
 <? if ($_GET["member_type"]) { ?>
 
-    <form action="<? if ($admin_adding) echo "add_this_member"; else echo "register_submit"; ?>.php" method="post" name="register_form">
+    <form action="<? if ($admin_adding) echo "add_this_member"; else echo "register_submit"; ?>.php" method="post" name="register_form" class="register-form">
+        <h3>(Account Info)</h3>
  	<input type="hidden" name="token"      value="<? $_SESSION["token"] = sha1(uniqid(rand(), TRUE)); echo $_SESSION["token"]; ?>" />
     <input type="hidden" name="sid"        value="<? echo session_id(); ?>">
   	<input type="hidden" name="self"       value="<?=$_SERVER["PHP_SELF"]?>">
@@ -250,30 +251,30 @@
             </tr>
 	 <? } ?>
  
-      <tr>
+    <tr>
         <td colspan="2" height="19"></td>  
-      </tr>
-      <tr>
-        <td align="right">&nbsp;</td>
+    </tr>
+    <tr>
         <td align="left">
-      
-        <input type="submit" name="submit" value="<? if (1) echo "Register"; else echo "Continue to Payment Screen"; ?>" 
+            <input type="submit" name="submit" value="<? if (1) echo "Sign Up Now"; else echo "Continue to Payment Screen"; ?>" 
         onClick="return check_register_form('<?=$rand_number?>', '<?=$admin_adding?>', '<?=$_GET["member_type"]?>');"> 
-        <input name="cancel" type="reset" value="Cancel"></td>
-      </tr>
-      <tr>
+        </td>
+        <td>
+            <input name="cancel" type="reset" value="Cancel">
+        </td>
+    </tr>
+    <tr>
         <td colspan="2" height="20" >&nbsp;</td>
-      </tr>
-      <tr>
+    </tr>
+    <tr>
         <td colspan="2" height="20" align="left"><span class="style4">
-        In order to receive the membership verification email you need to add <strong>info@<?=$g_website_domain?></strong>  to your email address book.  
-        Please do this before completing the registration process. Otherwise the membership verification email may be captured by a spam filter or quarantined in your "junk" email folder.   
+        In order to receive the membership verification email you need to add <strong>info@<?=$g_website_domain?></strong>  to your email address book. Please do this before completing the registration process. Otherwise the membership verification email may be captured by a spam filter or quarantined in your "junk" email folder.   
         If you do not receive the activation email please contact us.
-	
-        </span></td>
+        </span>
+        </td>
       </tr>
     </table>
-    </form>			
+    </form>
 
 <? } else { ?>
     
@@ -314,7 +315,7 @@
     <div align="left">
      <br />
     </div>
- </form>			
+ </form>
 
 <? }  ?>
     
