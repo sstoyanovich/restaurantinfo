@@ -15,26 +15,13 @@ $rnd_num1 = rand(1, 9);
 $rnd_num2 = rand(1, 9);
 $rnd_num3 = rand(1, 9);
 $rnd_num4 = rand(1, 9);
-$rand_number = ($rnd_num1 * 1000) + ($rnd_num2 * 100) + ($rnd_num3 * 10) + $rnd_num4; 
+$rand_number = ($rnd_num1 * 1000) + ($rnd_num2 * 100) + ($rnd_num3 * 10) + $rnd_num4;
 
 ?>
 <div class="container marketing">
-    
-    <div class="row">
-    
-        <div class="info_page_content">
-        
-        <img src="/images/headers/register.jpg" width="92" height="27" alt="Support" />
-<br /><br />
-			<? require("members/register_form_inc.php"); ?>
-        </div>
-
+    <h1><strong>Sign up</strong></h1>
+    <? require("members/register_form_inc.php"); ?>
     <div style="clear:both"></div>
-        
-    <? require("bootstrap_v1/incld/footer_inc.php"); ?>
-        
-    </div>
-    
-</div>
-<?
-require("bootstrap_v1/incld/page_end_inc.php");
+</div><!--/ .container.marketing-->
+<? require("bootstrap_v1/incld/footer_inc.php"); ?>
+<? require("bootstrap_v1/incld/page_end_inc.php");
