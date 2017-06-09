@@ -127,16 +127,16 @@ function change_search_type (which) {
     </div><!--/ .search-simple-->
 
 <? if ($this_page != "home"): ?>
-    <dl class="search-tools">
+    <!--dl class="search-tools">
         <dt>Search Type</dt>
         <dd>
             <input name="search_type" type="radio" value="s" <? if ($search_type != 'a') echo "checked"; ?> onclick="return change_search_type('s');" />Simple
             <input name="search_type" type="radio" value="a" <? if ($search_type == 'a') echo "checked"; ?> onclick="return change_search_type('a');" />Advanced
         </dd>
-    </dl>
+    </dl-->
 <? endif; ?>
 
-    <div id="form_category" style="display:<? if ($search_type == 'a') echo 'block'; else echo "none"; ?>">
+    <!--div id="form_category" style="display:<? if ($search_type == 'a') echo 'block'; else echo "none"; ?>"-->
 <? /*
     <table width="400">
     <tr>
@@ -160,7 +160,7 @@ function change_search_type (which) {
     </tr>
     </table>
 */ ?>
-    </div><!--/ #form_category-->
+    <!--/div--><!--/ #form_category-->
 
     <table id="old-search" style="display: none;">
         <tr>
@@ -194,10 +194,11 @@ function change_search_type (which) {
         </tr>
     </table>
 
-    <div id="form_sallary" style="display:<? if ($search_type == 'a') echo 'block'; else echo "none"; ?>">
-
+    <!--div id="form_sallary" style="display:<? if ($search_type == 'a') echo 'block'; else echo "none"; ?>"-->
+    
+    <div class="advanced-search">
         <table>
-            <tr>
+            <!--tr>
                 <td>State&nbsp; </td>
                 <td>
                     <select name="state" id="state" style="width:150px;">
@@ -256,29 +257,41 @@ function change_search_type (which) {
                         <option value='WY' <? if ($state == 'WY') echo "selected"; ?>>Wyoming</option>
                     </select>
                 </td>
+            </tr-->
+            <tr>
+                <td colspan="2">
+                    <label for="hourly_rate">Hourly Rate</label>
+                </td>
             </tr>
             <tr>
-                <td>Hourly Rate&nbsp; </td>
-                <td>$<input name="hourly_rate" id="hourly_rate" type="text" value="<?=$hourly_rate?>" style="width:50px"></td>
+                <td>
+                    <input name="hourly_rate" id="hourly_rate" type="text" value="<?=$hourly_rate?>" placeholder="$">
+                </td>
+                <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>Annual Salary: &nbsp; </td>
+                <td colspan="2">
+                    <label for="salary_min">Annual Salary</label>
+                </td>
+            </tr>
+            <tr>
                 <td>
                     <?
                         $max_for_sallary_range = 250;
                     ?>
-                    $<select name="salary_min" id="salary_min" style="width:70px;">
-                        <option selected="selected" value="0">Any</option>
+                    <select name="salary_min" id="salary_min">
+                        <option selected="selected" value="0">From</option>
                         <?
                           for ($sallary = 10; $sallary <= $max_for_sallary_range; $sallary += 10)
                           {
                               ?><option value="<?=$sallary?>" <? if ($salary_min == $sallary) echo "selected"; ?>><?=$sallary?>K<? if ($sallary == $max_for_sallary_range) echo '+'; ?></option><?
                           }
                           ?>
-                        </select>
-                        to:
-                        $<select name="salary_max" id="salary_max"  style="width:70px;">
-                      <option selected="selected" value="0">Any</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="salary_max" id="salary_max">
+                        <option selected="selected" value="0">To</option>
                         <?
                           for ($sallary = 10; $sallary <= $max_for_sallary_range; $sallary += 10)
                           {
@@ -289,31 +302,40 @@ function change_search_type (which) {
                 </td>
             </tr>
             <tr>
-                <td>Years Experience:</td>
+                <td colspan="2">
+                    <label for="years_min">Years Experience</label>
+                </td>
+            </tr>
+            <tr>
                 <?
                     $max_for_years_range = 25;
                 ?>
-                <td>&nbsp; <select name="years_min" id="years_min" style="width:70px;" >
-                  <option selected="selected" value="0">Any</option>
-                    <?
-                      for ($years = 1; $years <= $max_for_years_range; $years++)
-                      {
-                          ?><option value="<?=$years?>" <? if ($years_min == $years) echo "selected"; ?>><?=$years?><? if ($years == $max_for_years_range) echo '+'; ?></option><?
-                      }
-                      ?>
+                <td>
+                    <select name="years_min" id="years_min">
+                        <option selected="selected" value="0">From</option>
+                        <? 
+                            for ($years = 1; $years <= $max_for_years_range; $years++) {
+                        ?>
+                            <option value="<?=$years?>" <? if ($years_min == $years) echo "selected"; ?>><?=$years?><? if ($years == $max_for_years_range) echo '+'; ?></option>
+                        <?
+                            }
+                        ?>
                     </select>
-                to: &nbsp; <select name="years_max" id="years_max"  style="width:70px;">
-                  <option selected="selected" value="0">Any</option>
-                    <?
-                      for ($years = 1; $years <= $max_for_years_range; $years++)
-                      {
-                          ?><option value="<?=$years?>" <? if ($years_max == $years) echo "selected"; ?>><?=$years?><? if ($years == $max_for_years_range) echo '+'; ?></option><?
-                      }
-                      ?>
+                </td>
+                <td>
+                    <select name="years_max" id="years_max">
+                        <option selected="selected" value="0">To</option>
+                        <?
+                            for ($years = 1; $years <= $max_for_years_range; $years++) {
+                        ?>
+                            <option value="<?=$years?>" <? if ($years_max == $years) echo "selected"; ?>><?=$years?><? if ($years == $max_for_years_range) echo '+'; ?></option>
+                        <?
+                            }
+                        ?>
                     </select>
                 </td>
             </tr>
         </table>
-    </div>
-    <input class="submit" name="submit" type="submit" value="Search">
+        <input class="submit" name="submit" type="submit" value="Search Now">
+    </div><!--/ .advanced-search-->
 </form>

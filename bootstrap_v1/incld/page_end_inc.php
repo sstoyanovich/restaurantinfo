@@ -8,6 +8,8 @@
     <script type="text/javascript" src="/js/featured-company.js"></script>
     <? elseif ($this_page == "register"): ?>
     <script type="text/javascript" src="/js/check_register_form.js"></script>
+    <? elseif ($this_page == "jobs"): ?>
+    <script type="text/javascript" src="/js/jobs.js"></script>
     <? endif;  ?>
     <script type="text/javascript" src="/js/ajax_utils.js"></script>
   </body>

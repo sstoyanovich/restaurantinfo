@@ -10,23 +10,36 @@
     <? } ?>
 
     <? if ($_SESSION["member_id"] != 1) { ?>
-
-        <a href="/my-jobs.php?showset=init" class="<? if ($this_page == "jobs") echo "active"; ?>">my jobs</a>
+    <li>
+        <ul class="tools">
+            <li>
+                <a href="/my-jobs.php?showset=init" class="<? if ($this_page == "jobs") echo "active"; ?>">my jobs</a>
+            </li>
 
         <? if ($_SESSION["member_type"] == 'E') { ?>
-            <a href="/search-candidates.php" class="<? if ($this_page == "search") echo "active"; ?>">search candidates</a>
+            <li>
+                <a href="/search-candidates.php" class="<? if ($this_page == "search") echo "active"; ?>">search candidates</a>
+            </li>
         <? } else { ?>
-             <a href="/search.php" class="<? if ($this_page == "search") echo "active"; ?>">search jobs</a>
+            <li>
+                <a href="/search.php" class="<? if ($this_page == "search") echo "active"; ?>">search jobs</a>
+            </li>
         <? } ?>
-
-           <a href="/my-profile.php" class="<? if ($this_page == "products") echo "active"; ?>">profile</a>
-           <a href="/my-contact-info.php" class="<? if ($this_page == "contact-info") echo "active"; ?>">contact info</a>
-
+            <li>
+                <a href="/my-profile.php" class="<? if ($this_page == "products") echo "active"; ?>">Profile</a>
+            </li>
+            <li>
+                <a href="/my-contact-info.php" class="<? if ($this_page == "contact-info") echo "active"; ?>">contact info</a>
+            </li>
  	<? } ?>
-
-       <a href="/change-password.php" class="<? if ($this_page == "logout") echo "active"; ?>">password</a>
-       <a href="/logout.php" class="<? if ($this_page == "logout") echo "active"; ?>">logout</a>
-
+            <li>
+                <a href="/change-password.php" class="<? if ($this_page == "logout") echo "active"; ?>">Password</a>
+            </li>
+            <li>
+                <a href="/logout.php" class="<? if ($this_page == "logout") echo "active"; ?>">Log out</a>
+            </li>
+        </ul>
+    </li>
 <? } else {
 
 	//*************************************************************

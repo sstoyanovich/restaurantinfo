@@ -199,23 +199,11 @@
 		display:block;
     }
 }
-
-@media (max-width: 767px) {
-    .marketing {
-		margin-top:60px !important;
-    }
-}
-@media (min-width: 768px) {
-    .marketing {
-	margin-top:60px !important;
-    }
-}
 .text_link
 {
 	color:#0000cc;
 	text-decoration:underline;
 }
-
 .text_link:hover
 {
 	color:#900;
