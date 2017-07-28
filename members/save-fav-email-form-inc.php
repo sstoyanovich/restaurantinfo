@@ -1,17 +1,17 @@
-<script type="text/javascript">
-function check_email_entered()
-{
+<script>
+function check_email_entered() {
 	var email_entered = document.getElementById("save_fav_email").value;
-	if (email_entered)
+	
+    if (email_entered) {
 		return true;
-	else
+    } else {
 		return false;
+    }
 }
 </script>
 
-<div id="sign_in_to_save_fav" style="display:block">
-
-	To view previous favorites or save new favorites, enter your email address below:<br /><br />
+<div id="sign_in_to_save_fav">
+    <p>To view previous favorites or save new favorites, enter your email address below:</p>
 
     <form action="/members/save_fav_email.php" method="post" name="save_fav">
       <input type="hidden" id="sid" name="sid" value="<?=session_id(); ?>" />
@@ -29,7 +29,7 @@ function check_email_entered()
       <input type="hidden" id="years_max" name="years_max" value="<?=$years_max?>" />
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td width="33%" align="right" valign="top">Email:  &nbsp; </td>
+        <td width="33%" align="right" valign="top">Email:&nbsp;</td>
         <td width="67%" align="left" valign="top"><input id="fav_email" type="text" name="fav_email" size="40" maxlength="255" onfocus="this.select();"></td>
       </tr>
       <tr>
@@ -37,6 +37,5 @@ function check_email_entered()
         <td align="left"><input type="submit" name="submit" value="View / Save Favorites" onClick="return check_email_entered();"></td>
       </tr>
     </table>  
- </form>			
-
-</div>
+ </form>
+</div><!--/ #sign_in_to_save_fav-->

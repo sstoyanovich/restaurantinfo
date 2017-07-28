@@ -163,4 +163,13 @@ function validate_email(str)
 	
 	 return true;				
 }
-
+$(function () {
+    $('input#member_type').change(function () {
+        var membershipForm = $("#register_form_membership_type"),
+            submitButton = $("#register_form_membership_type input[type=submit]");
+        
+        submitButton.click();
+        
+        return false;
+    });
+});

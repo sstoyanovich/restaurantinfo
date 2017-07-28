@@ -1,5 +1,0 @@
-AuthName "Restricted Area" 
-AuthType Basic 
-AuthUserFile /home/sstoyanovich/public_html/.htpasswd 
-AuthGroupFile /dev/null 
-require valid-user

@@ -1,5 +1,7 @@
 <?
 session_start();
+
+
 $use_CDN = 1;
 $this_page = "home";
 //ini_set('error_reporting', E_ALL);

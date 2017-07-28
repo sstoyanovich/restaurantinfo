@@ -1,25 +1,23 @@
 <?
-if ($_GET["restore_search"] == 1)
-{
-     $page          = $_SESSION["page"];
-     $sort          = $_SESSION["sort"];
-     $rev           = $_SESSION["rev"];
-     $token         = $_SESSION["token"];
-     $sid           = $_SESSION["sid"];
-     $search_type   = $_SESSION["search_type"]; // 'a' = advanced, 's' = simple
-     $search_terms  = $_SESSION["search_terms"];
-     $state         = $_SESSION["state"];
-     $category      = $_SESSION["category"];
-     $job_title_id  = $_SESSION["job_title_id"];
-     $job_title     = $_SESSION["job_title"];
-     $hourly_rate   = $_SESSION["hourly_rate"];
-     $salary_min    = $_SESSION["salary_min"];
-     $salary_max    = $_SESSION["salary_max"];
-     $years_min     = $_SESSION["years_min"];
-     $years_max     = $_SESSION["years_max"];
-}
-else if ($_GET["new_search"] == 1)
-{
+if ($_GET["restore_search"] == 1) {
+    $page          = $_SESSION["page"];
+    $sort          = $_SESSION["sort"];
+    $rev           = $_SESSION["rev"];
+    $token         = $_SESSION["token"];
+    $sid           = $_SESSION["sid"];
+    $search_type   = $_SESSION["search_type"]; // 'a' = advanced, 's' = simple
+    $search_terms  = $_SESSION["search_terms"];
+    $state         = $_SESSION["state"];
+    $category      = $_SESSION["category"];
+    $job_title_id  = $_SESSION["job_title_id"];
+    $job_title     = $_SESSION["job_title"];
+    $hourly_rate   = $_SESSION["hourly_rate"];
+    $salary_min    = $_SESSION["salary_min"];
+    $salary_max    = $_SESSION["salary_max"];
+    $years_min     = $_SESSION["years_min"];
+    $years_max     = $_SESSION["years_max"];
+
+} else if ($_GET["new_search"] == 1) {
     $_SESSION["page"]           = $page             = '';
     $_SESSION["sort"]           = $sort             = '';
     $_SESSION["rev"]            = $rev              = '';
@@ -36,9 +34,8 @@ else if ($_GET["new_search"] == 1)
     $_SESSION["salary_max"]     = $salary_max       = '';
     $_SESSION["years_min"]      = $years_min        = '';
     $_SESSION["years_max"]      = $years_max        = '';
-}
-else // Search has been submitted from search form, so save parms.
-{
+
+} else { // Search has been submitted from search form, so save parms. 
     $_SESSION["page"]           = $page             = clean_post_var($_GET["page"]);
     $_SESSION["sort"]           = $sort             = clean_post_var($_GET["sort"]);
     $_SESSION["rev"]            = $rev              = clean_post_var($_GET["rev"]);
@@ -57,13 +54,15 @@ else // Search has been submitted from search form, so save parms.
     $_SESSION["years_max"]      = $years_max        = clean_post_var($_GET["years_max"]);
 }
 
-if (!$search_type) $search_type = 's';
+if (!$search_type) {
+    $search_type = 's';
+}
 
-if (!$_SESSION["token"])
+if (!$_SESSION["token"]) {
     $_SESSION["token"] = sha1(uniqid(rand(), TRUE));
+}
 
-if ($debug_msgs)
-{
+if ($debug_msgs) {
     echo "token = $token<br />";
     echo "session token = " . $_SESSION["token"] . "<br />";
     echo "sid = $sid<br />";
@@ -84,10 +83,10 @@ if ($debug_msgs)
     echo "years_max = $years_max<br />";
     echo "fav_email = $fav_email<br />";
 }
-
 ?>
-<script type="text/javascript" src="/js/hide_node.js"></script>
-<script type="text/javascript">
+
+<script src="/js/hide_node.js"></script>
+<script>
 function change_search_type (which) {
     if (which == 'a')
     {
@@ -259,11 +258,6 @@ function change_search_type (which) {
                 </td>
             </tr-->
             <tr>
-                <td colspan="2">
-                    <label for="hourly_rate">Hourly Rate</label>
-                </td>
-            </tr>
-            <tr>
                 <td>
                     <input name="hourly_rate" id="hourly_rate" type="text" value="<?=$hourly_rate?>" placeholder="$">
                 </td>
@@ -271,7 +265,7 @@ function change_search_type (which) {
             </tr>
             <tr>
                 <td colspan="2">
-                    <label for="salary_min">Annual Salary</label>
+                    <label for="hourly_rate">Hourly Rate</label>
                 </td>
             </tr>
             <tr>
@@ -303,7 +297,7 @@ function change_search_type (which) {
             </tr>
             <tr>
                 <td colspan="2">
-                    <label for="years_min">Years Experience</label>
+                    <label for="salary_min">Annual Salary</label>
                 </td>
             </tr>
             <tr>
@@ -335,7 +329,13 @@ function change_search_type (which) {
                     </select>
                 </td>
             </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="years_min">Years Experience</label>
+                </td>
+            </tr>
         </table>
-        <input class="submit" name="submit" type="submit" value="Search Now">
+        <img src="/images/fake/Restuarant-Info-FINAL-PayRateSlider.jpg" alt="slider">
     </div><!--/ .advanced-search-->
+    <input class="submit" name="submit" type="submit" value="Search Now">
 </form>

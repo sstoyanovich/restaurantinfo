@@ -58,9 +58,14 @@
         </li>
         <li>
             <ul class="tools">
-                <li class="nav-jobs"><a href="/jobs.php" class="<? if ($this_page == "jobs") echo "active"; ?>">Jobs</a></li>
-                <li class="nav-lookup"><a href="/search.php" class="<? if ($this_page == "search") echo "active"; ?>">Lookup</a></li>
-                <li class="nav-companies"><a href="/companies.php" class="<? if ($this_page == "companies") echo "active"; ?>">Companies</a></li>
+                <li class="nav-jobs">
+                    <a href="/jobs.php" class="<? if ($this_page == "jobs") echo "active"; ?>">Jobs</a></li>
+                <li class="nav-lookup">
+                    <a href="/search.php" class="<? if ($this_page == "search") echo "active"; ?>">Lookup</a>
+                </li>
+                <li class="nav-companies">
+                    <a href="/companies.php" class="<? if ($this_page == "companies") echo "active"; ?>">Restaurants</a>
+                </li>
             </ul>
         </li>
 <?

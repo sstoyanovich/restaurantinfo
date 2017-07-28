@@ -2,6 +2,10 @@
  * =GLOBAL STYLES
  */
 html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 body {
     padding-bottom: 40px;
@@ -33,10 +37,13 @@ h1 strong {
  */
 .logo {
     display: inline-block;
-    margin-top: 111px;
-    margin-bottom: 75px;
+    margin-top: 100px;
+    margin-bottom: 20px;
     z-index: 2;
     position: relative;
+}
+.logo img {
+    width: 90%;
 }
 /**
  * =navigation
@@ -51,7 +58,7 @@ nav ul {
     padding: 0;
 }
 nav.wide_only {
-    font-size: 22px;
+    font-size: 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -64,11 +71,14 @@ ul.profile {
     float: left;
 }
 ul.tools {
-    float: right;
+    float: left;
 }
 .tools a {
     width: 211px;
     text-align: center;
+}
+.tools a:hover {
+    background: #88be43;
 }
 nav.wide_only li li {
     float: left;
@@ -80,17 +90,20 @@ nav.wide_only li a {
     background: #0b1c38;
     color: #fff;
 }
+nav.wide_only li a:hover {
+    text-decoration: none;
+}
 .wide_only .nav-signup a {
     padding: 1.3rem 4rem;  
     border-radius: 0 0 10px 10px;
     background: #88be43;
-    font-size: 26px;
 }
 .wide_only .nav-login a {
     height: 0;
-    padding: 57px 2rem 0 2rem;
-    background: transparent url(/images/icon/log-in.png) no-repeat 100% 100%;
+    padding: 52px 2rem 0 4rem;
+    background: transparent url(/images/icon/log-in.png) no-repeat 50% 100%;
     overflow: hidden;
+    background-size: 36%;
 }
 /**
  * =search
@@ -102,7 +115,7 @@ nav.wide_only li a {
 .search-simple {
     width: 100%;
     padding-left: 280px;
-    margin-top: -187px;
+    margin-top: -120px;
     position: relative;
     z-index: 1;
     float: right;
@@ -137,20 +150,45 @@ nav.wide_only li a {
     border-right: 1px solid #9d9d9d;
 }
 .submit {
-    position: absolute;
-    right: 0;
-    top: -187px;
-    z-index: 3;
+    width: 66px;
     height: 0;
     padding-top: 60px;
-    background: transparent url(/images/icon/search-submit.png) 0 0;
     border: 0;
+    position: absolute;
+    right: 0;
+    top: -120px;
+    z-index: 3;
+    background: transparent url(/images/icon/search-submit.png) 0 0;
+}
+.body-search .submit {
+    width: auto;
+    position: static;
+    background: #88be43;
+    height: auto;
+    padding: .5em 1em;
+    color: #fff;
+    font-size: 1.3em;
+    float: right;
+}
+.body-search .submit:after {
+    display: table;
+    content: "";
 }
 .search-tools {
     display: none;
 }
 .body-search .search-tools {
     display: block;
+}
+
+/**
+ * =search page
+ */
+.body-search h1 {
+    margin-top: 100px;
+}
+#sign_in_to_save_fav {
+    display: none;
 }
 /**
  * =footer
@@ -248,6 +286,22 @@ footer a {
 /**
  * =jobs page
  */
+.body-jobs h2 {
+    width: 40%;
+}
+.jobs-filter {
+    float: right;
+    color: #88be43;
+    font-weight: normal;
+    font-size: .9em;
+    margin-top: -.25em;
+    display: inline-block;
+}
+.jobs-filter svg {
+    fill: #88be43;
+    position: relative;
+    top: .25em;
+}
 #jobs-listing {
     padding-left: 0;
     margin-left: 0;
@@ -256,7 +310,7 @@ footer a {
     list-style: none;
 }
 #jobs-listing li {
-    padding: 1em;
+    padding: 1em 1em 0 2em;
     background: #ddd;
     border-bottom: 2px solid #aaa;
 }
@@ -264,13 +318,28 @@ footer a {
     background: #88be43;
     color: #fff;
 }
+#jobs-listing .current .est-salary {
+    color: #0b1c38;
+}
+#jobs-listing .job-title {
+    font-size: 1.2em;
+}
+#jobs-listing .date-listed {
+    padding: .4em 1em;
+    float: right;
+    position: relative;
+    bottom: .75em;
+    right: -1em;
+    color: #fff;
+    background: #0b1c38;
+}
 #jobs-listing .long-description {
     display: none;
     color: #0b1c38;
 }
 #jobs-listing .current .long-description {
     display: block;
-    width: 60%;
+    width: 50%;
     position: absolute;
     left: 50%;
     top: 0;
@@ -280,17 +349,59 @@ footer a {
     color: #88be43;
     text-decoration: underline;
 }
+.apply-now a {
+    margin-top: 2em;
+    padding: .5em 1.5em;
+    float: left;
+    color: #fff;
+    font-size: 1.15em;
+    background: #88be43;
+}
 /**
  * =register form
  */
+#register_form_membership_type {
+    width: 45%;
+    float: left;
+    margin-bottom: 2em;
+}
+#register_form_membership_type input[type=submit] {
+    display: none;
+}
+.register-form:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+}
 .register-form {
+    color: #9d9d9d;
+}
+.register-form table {
+    width: 100%;
+}
+.company-information {
+    clear: left;
+    width: 45%;
     background: #eaf3dd;
-    width: 60%;
+    padding: 0 2em 2em;
+    float: left;
+}
+.general-information {
+    margin-top: 1em;
+    width: 45%;
+    background: #eaf3dd;
     padding: 2em;
     float: right;
 }
+.company-information + .general-information {
+    margin-top: -7em;
+}
 .register-form td {
     padding-bottom: 1em;
+}
+.register-form td:first-child {
+    width: 30%;
 }
 .register-form input {
     border: 1px solid #9d9d9d;
@@ -298,8 +409,12 @@ footer a {
     border-top: none;
     border-right: none;
     background: #eaf3dd;
+    width: 100%;
 }
-xxxinput[type="submit"],
+.register-form input[name=accept] {
+    width: auto;
+    margin-right: 1em;
+}
 .register-form input[type=submit] {
     background: #88be43;
     padding:.5em 1em;
@@ -323,15 +438,14 @@ xxxinput[type="submit"],
 .advanced-search table {
     width: 100%;
     border-collapse: collapse;
-    position: relative;
-    top: -100px;
-    margin-bottom: -50px;
 }
 .advanced-search td {
     width: 50%;
 }
 .advanced-search label {
-    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .3rem 4rem;
+    text-transform: lowercase;
 }
 .advanced-search table input,
 .advanced-search table select {
@@ -342,13 +456,14 @@ xxxinput[type="submit"],
     padding: 1rem 1rem 1rem 4rem;
     height: 60px;
 }
-.advanced-search .submit {
-    width: auto;
-    position: static;
-    background: #88be43;
-    height: auto;
+/**
+ * =search results
+ */
+#myTable td {
     padding: .5em 1em;
-    color: #fff;
+}
+#myTable th {
+    padding: 1em;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -386,7 +501,8 @@ xxxinput[type="submit"],
   text-align: center;
 }
 .marketing h2 {
-  font-weight: normal;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 .marketing .col-lg-4 p {
   margin-right: 10px;

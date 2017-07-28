@@ -1,5 +1,13 @@
 <?
-$query = "SELECT job_titles.job_title, jobs.description, jobs.meta_description,jobs.contact_company, jobs.city, jobs.state, members.company_culture from jobs, job_titles, members WHERE job_titles.job_title_id = jobs.job_title_id AND members.member_id = jobs.member_id AND jobs.description IS NOT NULL ORDER BY jobs.date_listed DESC LIMIT 7";
+function date_listed($date) {
+    $now = time(); // or your date as well
+    $your_date = strtotime($date);
+    $datediff = $now - $your_date;
+
+    return floor($datediff / (60 * 60 * 24));
+}
+
+$query = "SELECT job_titles.job_title, jobs.description, jobs.meta_description, jobs.years_min, jobs.years_max, jobs.date_listed, jobs.contact_company, jobs.city, jobs.state, members.company_culture from jobs, job_titles, members WHERE job_titles.job_title_id = jobs.job_title_id AND members.member_id = jobs.member_id AND jobs.description IS NOT NULL ORDER BY jobs.date_listed DESC LIMIT 7";
 
 $result = mysql_query($query) or die(mysql_error());
 ?>
@@ -8,11 +16,17 @@ $result = mysql_query($query) or die(mysql_error());
 <?  
     $counter = 0;
     
-    while ($rs = mysql_fetch_object($result)): ?>
+    while ($rs = mysql_fetch_object($result)):
+        $days_listed = date_listed($rs->date_listed);
+?>
     <li<? if (0 == $counter) { echo ' class="current"'; } ?>>
         <dl>
-            <dt><? echo $rs->job_title; ?></dt>
+            <dt class="job-title"><? echo $rs->job_title; ?></dt>
             <dd><? echo $rs->contact_company . " &mdash; " . $rs->city . ", " . $rs->state; ?>
+            </dd>
+            <dd class="est-salary">Est. Salary: $<? echo $rs->years_min . "k&mdash;$" . $rs->years_max . "k"; ?>
+            </dd>
+            <dd class="date-listed"><? echo $days_listed; ?> Days Ago
             </dd>
             <dd class="long-description">
                 <h3>Short Description</h3>
@@ -23,6 +37,8 @@ $result = mysql_query($query) or die(mysql_error());
                 </p>
                 <h3>Job Details</h3>
                 <p><? echo $rs->meta_description; ?>
+                </p>
+                <p class="apply-now"><a href="#">Apply Now</a>
                 </p>
             </dd>
         </dl>
